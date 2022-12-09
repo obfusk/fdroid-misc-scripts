@@ -15,8 +15,8 @@ with open("no-longer-rb") as fh:
     no_longer_rb = set(l.strip() for l in fh.readlines())
 with open("signflinger") as fh:
     signflinger = set(l.strip() for l in fh.readlines())
-for appid in sys.stdin:
-    appid = appid.strip()
+for line in sys.stdin:
+    appid = line.strip()
     info = []
     if appid in disabled:
         info.append("disabled")

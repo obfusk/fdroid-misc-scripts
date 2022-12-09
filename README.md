@@ -12,7 +12,7 @@ $ git clone https://gitlab.com/fdroid/fdroiddata.git
 
 ## Scripts
 
-### Index
+### Index & metadata
 
 #### download-index.sh
 
@@ -22,9 +22,40 @@ Downloads F-Droid's `index-v1.jar` & extracts `index-v1.json` from it.
 $ ./scripts/download-index.sh
 ```
 
+#### update-index-and-metadata-apps.sh
+
+Creates/updates `apps/index-apps`, `apps/metadata-apps`, etc.
+
+```sh
+$ ./scripts/update-index-and-metadata-apps.sh
+getting apps from index-v1.json...
+listing apps from metadata...
+diffing...
+$ ls -1 apps/
+index-apps
+index-apps-not-in-metadata
+metadata-apps
+metadata-apps-archived-and-disabled
+metadata-apps-not-archived-or-disabled
+metadata-apps-not-in-index
+```
+
+#### apps-status.py
+
+Reads a list of appids from stdin and parses the metadata YAML for each app to
+show its status: `disabled`, `archived`, `all builds disabled`, or `version=NAME
+code=CODE` for the latest (non-disabled) build.
+
+```sh
+$ ./scripts/apps-status.py < apps/metadata-apps-not-in-index
+some.app.id                                                   version=4.2 code=42
+some.other.app.id                                             all builds disabled
+[...]
+```
+
 ### Reproducible Builds: Overview
 
-#### rb.sh
+#### update-rb.sh
 
 Creates `reproducible/YYYY-MM-DD-{bins,sigs}`: an overview of the apps using
 `Binaries`/`signatures` on that date.
@@ -33,8 +64,8 @@ NB: this doesn't *modify* `fdroiddata`, but it does check out the first commit
 on the specified date (and then `master`).
 
 ```sh
-$ ./scripts/rb.sh 2022-11-01
-$ ./scripts/rb.sh 2022-12-01
+$ ./scripts/update-rb.sh 2022-11-01
+$ ./scripts/update-rb.sh 2022-12-01
 ```
 
 <details>
