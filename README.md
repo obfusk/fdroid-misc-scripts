@@ -22,6 +22,66 @@ Downloads F-Droid's `index-v1.jar` & extracts `index-v1.json` from it.
 $ ./scripts/download-index.sh
 ```
 
+### Reproducible Builds: Overview
+
+#### rb.sh
+
+Creates `reproducible/YYYY-MM-DD-{bins,sigs}`: an overview of the apps using
+`Binaries`/`signatures` on that date.
+
+NB: this doesn't *modify* `fdroiddata`, but it does check out the first commit
+on the specified date (and then `master`).
+
+```sh
+$ ./scripts/rb.sh 2022-11-01
+$ ./scripts/rb.sh 2022-12-01
+```
+
+<details>
+
+```sh
+$ cd reproducible
+$ head 2022-12-01-bins
+androdns.android.leetdreams.ch.androdns
+ch.admin.bag.covidcertificate.verifier
+ch.admin.bag.covidcertificate.wallet
+com.dhaval.bookland
+com.github.bmx666.appcachecleaner [signflinger]
+com.markuspage.android.certtools [missing]
+com.mishiranu.dashchan
+com.rafapps.earthviewformuzei [signflinger]
+com.zionhuang.music
+de.corona.tracing
+$ head 2022-12-01-sigs
+de.schildbach.wallet
+de.schildbach.wallet_test
+dev.obfusk.jiten
+dev.obfusk.jiten_webview
+dev.obfusk.sokobang
+org.schabi.newpipe [no longer RB]
+org.torproject.torservices
+```
+
+</details>
+
+To see what changed between two dates, you can use e.g.:
+
+```sh
+$ cd reproducible
+$ diff -Naur 2022-{11,12}-01-bins | grep ^+ | cut -c2- | tail -n +2   # added
+$ diff -Naur 2022-{11,12}-01-bins | grep ^- | cut -c2- | tail -n +2   # removed
+```
+
+#### update-rb-signflinger.sh
+
+Updates `reproducible/signflinger` using `detect-virtual-entry.sh`.
+
+```sh
+$ ./scripts/update-rb-signflinger.sh
+```
+
+NB: `reproducible/{disabled,missing,no-longer-rb}` are updated manually.
+
 ### Reproducible Builds: Binaries
 
 #### download-binaries.sh
@@ -48,6 +108,7 @@ $ cd binaries
 $ ../scripts/compare-binaries.sh cmp
 some.app.id_42                                                          OK
 some.other.app.id_37                                                    skipped
+[...]
 ```
 
 #### detect-signflinger.sh
@@ -57,7 +118,10 @@ manifest, which is extracted using `apksigtool`.
 
 ```sh
 $ cd binaries
-$ ../scripts/compare-binaries.sh
+$ ../scripts/detect-signflinger.sh
+some.app.id_42_fdroid.apk
+some.app.id_42_upstream.apk
+[...]
 ```
 
 NB: most -- but not all! -- of these APKs will start with a zipflinger virtual
@@ -71,4 +135,7 @@ zipflinger virtual entry.
 ```sh
 $ cd binaries
 $ ../scripts/detect-virtual-entry.sh
+some.app.id_42_fdroid.apk
+some.app.id_42_upstream.apk
+[...]
 ```

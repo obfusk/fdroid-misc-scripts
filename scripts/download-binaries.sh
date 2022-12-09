@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2022 FC Stegerman <flx@obfusk.net>
 # SPDX-License-Identifier: AGPL-3.0-or-later
 set -e
+export LC_ALL=C.UTF-8
 mkdir -p binaries
 for yml in $( grep -l ^Binaries: fdroiddata/metadata/*.yml | sort ); do
   echo "==> $yml"
