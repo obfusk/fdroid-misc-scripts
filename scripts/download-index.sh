@@ -8,5 +8,7 @@ if [ -x "$( command -v apksigtool )" ]; then
     --signed-by=43238d512c1e5eb2d6569f4a3afbf5523418b82e0a3ed1552770abb9a9c9ccab: index-v1.jar
 else
   echo 'WARNING: apksigtool not found; unable to verify JAR' >&2
+  read -r -p "Continue without verification? "
+  [[ "$REPLY" == [Yy]* ]] || exit 1
 fi
 unzip -o index-v1.jar index-v1.json
