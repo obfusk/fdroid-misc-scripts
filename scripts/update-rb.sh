@@ -39,8 +39,8 @@ if [ -n "$1" ]; then
   date="$1"
   commit="$( git log --pretty='%H %cd' --date=format:%F \
                | grep -F "$date" | tail -1 | cut -d' ' -f1 )"
-  echo "checking out $commit..."
-  git checkout "$commit"
+  echo "checking out $commit^..."
+  git checkout "$commit^"
 else
   date="$( date +%F )"
 fi
