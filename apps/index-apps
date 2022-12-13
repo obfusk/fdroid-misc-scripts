@@ -34,6 +34,7 @@ app.fedilab.openmaps
 app.fedilab.tubelab
 app.intra
 app.librenews.io.librenews
+app.mlauncher
 app.olauncher
 app.olaunchercf
 app.openconnect
@@ -192,6 +193,7 @@ ch.thilojaeggi.notely
 ch.tiim.markdown_widget
 chat.fluffy.fluffychat
 chat.rocket.android
+chat.simplex.app
 cityfreqs.com.pilfershushjammer
 cl.coders.faketraveler
 click.dummer.UartSmartwatch
@@ -363,6 +365,7 @@ com.ariwilson.seismowallpaper
 com.arnaud.metronome
 com.artifex.mupdf.mini.app
 com.artifex.mupdf.viewer.app
+com.artikus.nolauncher
 com.artivain.reseaudiscord
 com.as.anagramsolver
 com.asdoi.gymwen
@@ -569,6 +572,7 @@ com.doomy.torch
 com.doplgangr.secrecy
 com.dosse.airpods
 com.dosse.bwentrain.androidPlayer
+com.dosse.clock31
 com.dosse.dozeoff
 com.dosse.speedtest
 com.dougkeen.bart
@@ -2225,6 +2229,7 @@ es.wolfi.app.passman
 espero.jiofibatterynotifier
 et.nWifiManager
 eth.matteljay.mastermindy
+eu.auct.twitter2nitter
 eu.bauerj.paperless_app
 eu.berdosi.app.heartbeat
 eu.bubu1.fdroidclassic
@@ -2565,6 +2570,7 @@ io.github.yoshi1123.adbio
 io.github.z3r0c00l_2k.aquadroid
 io.githubfede0d.planetrider
 io.gitlab.allenb1.todolist
+io.gitlab.cryptographic_id
 io.gitlab.danielrparks.vibrato
 io.gitlab.mudassir.youtubecacher
 io.gresse.hugo.anecdote
@@ -3037,6 +3043,7 @@ org.adaway
 org.adblockplus.android
 org.adw.launcher
 org.afhdownloader
+org.afrikalan.tuxmath
 org.aja.flightmode
 org.akvo.rsr.up
 org.alberto97.aodtoggle
@@ -3062,6 +3069,7 @@ org.anothermonitor
 org.appsroid.fxpro
 org.ardour
 org.artsoft.rocksndiamonds
+org.asafonov.blockbuster
 org.asafonov.monly
 org.asdtm.fas
 org.asdtm.goodweather

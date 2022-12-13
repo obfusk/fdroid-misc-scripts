@@ -37,6 +37,7 @@ app.fedilab.tubelab
 app.fyreplace.client
 app.intra
 app.librenews.io.librenews
+app.mlauncher
 app.olauncher
 app.olaunchercf
 app.openconnect
@@ -397,6 +398,7 @@ com.artifex.mupdf.mini
 com.artifex.mupdf.mini.app
 com.artifex.mupdf.viewer.app
 com.artifex.mupdfdemo
+com.artikus.nolauncher
 com.artivain.reseaudiscord
 com.as.anagramsolver
 com.asdoi.gymwen
@@ -619,6 +621,7 @@ com.doplgangr.secrecy
 com.dosse.airpods
 com.dosse.bwentrain.androidPlayer
 com.dosse.chromiumautoupdater
+com.dosse.clock31
 com.dosse.dozeoff
 com.dosse.speedtest
 com.dougkeen.bart
@@ -694,6 +697,7 @@ com.espruino.gadgetbridge.banglejs
 com.etesync.notes
 com.etesync.syncadapter
 com.euedge.openaviationmap.android
+com.eurokonverter
 com.evancharlton.mileage
 com.evenement.encapsulation
 com.eventyay.attendee
@@ -2404,6 +2408,7 @@ es.wolfi.app.passman
 espero.jiofibatterynotifier
 et.nWifiManager
 eth.matteljay.mastermindy
+eu.auct.twitter2nitter
 eu.bauerj.paperless_app
 eu.berdosi.app.heartbeat
 eu.bubu1.fdroidclassic
@@ -3304,6 +3309,7 @@ org.adblockplus.android
 org.addhen.smssync
 org.adw.launcher
 org.afhdownloader
+org.afrikalan.tuxmath
 org.aja.flightmode
 org.akvo.rsr.up
 org.alberto97.aodtoggle
@@ -3331,6 +3337,7 @@ org.anothermonitor
 org.appsroid.fxpro
 org.ardour
 org.artsoft.rocksndiamonds
+org.asafonov.blockbuster
 org.asafonov.monly
 org.asdtm.fas
 org.asdtm.goodweather
