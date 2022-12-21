@@ -142,6 +142,18 @@ some.other.app.id_37                                                    skipped
 [...]
 ```
 
+#### detect-blocks.sh
+
+Lists APKs in `binaries/` that contain blocks of other types than
+`APKSignatureSchemeBlock` or `VerityPaddingBlock` in their APK Signing Block.
+
+```sh
+$ cd binaries
+$ ../scripts/detect-blocks.sh
+some.app.id_42_fdroid.apk: DependencyInfoBlock
+[...]
+```
+
 #### detect-signflinger.sh
 
 Lists APKs in `binaries/` that are signed by Signflinger according to their
