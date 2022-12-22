@@ -106,6 +106,7 @@ biz.codefuture.svgviewer
 biz.gyrus.yaab
 bluepie.ad_silence
 bou.amine.apps.readerforselfossv2.android
+br.com.colman.nato
 br.com.colman.petals
 br.com.frs.foodrestrictions
 br.com.gualandi.dailypill
@@ -646,6 +647,7 @@ com.espruino.gadgetbridge.banglejs
 com.etesync.notes
 com.etesync.syncadapter
 com.euedge.openaviationmap.android
+com.eurokonverter
 com.evancharlton.mileage
 com.evenement.encapsulation
 com.eventyay.attendee
@@ -2256,6 +2258,7 @@ eu.kanade.tachiyomi
 eu.lavarde.pmtd
 eu.lepiller.nani
 eu.mrogalski.saidit
+eu.neilalexander.yggdrasil
 eu.polarclock
 eu.pretix.pretixdroid
 eu.pretix.pretixprint
