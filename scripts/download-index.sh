@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2022 FC Stegerman <flx@obfusk.net>
 # SPDX-License-Identifier: AGPL-3.0-or-later
 set -e
+export LC_ALL=C.UTF-8
 wget -O index-v1.jar -- https://f-droid.org/repo/index-v1.jar
 if [ -x "$( command -v apksigtool )" ]; then
   apksigtool verify-v1 --allow-unsafe=SHA1 \
