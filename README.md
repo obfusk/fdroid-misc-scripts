@@ -142,6 +142,17 @@ some.other.app.id_37                                                    skipped
 [...]
 ```
 
+#### detect-blocks-fdroiddata.sh
+
+Lists `fdroiddata/metadata/*/signatures/*/APKSigningBlock` that contain blocks
+of other types than `APKSignatureSchemeBlock` or `VerityPaddingBlock`.
+
+```sh
+$ ./scripts/detect-blocks-fdroiddata.sh
+fdroiddata/metadata/some.app.id/signatures/42/APKSigningBlock: DependencyInfoBlock
+[...]
+```
+
 #### detect-blocks.sh
 
 Lists APKs in `binaries/` that contain blocks of other types than
