@@ -37,6 +37,7 @@ com.blogspot.tonyatkins.freespeech
 com.botbrew.basil
 com.bottleworks.dailymoney
 com.brackeys.ui
+com.brentpanther.bitcoincashwidget
 com.bri1.soundbored
 com.chanapps.four.activity
 com.chmod0.manpages
@@ -71,6 +72,7 @@ com.hayaisoftware.launcher
 com.hermit.btreprap
 com.howeyc.spiped
 com.hughes.android.dictionary
+com.hykwok.CurrencyConverter
 com.ideasfrombrain.search_based_launcher_v2
 com.ilm.sandwich
 com.iven.lfflfeedreader
@@ -126,6 +128,7 @@ com.studio332.flickit
 com.syncedsynapse.kore2
 com.teleca.jamendo
 com.thechiefmeat.freetusky
+com.toxtox.philosopherstonewidget
 com.twobuntu.twobuntu
 com.unleashyouradventure.swaccess
 com.uraroji.garage.android.mp3recvoice
@@ -256,6 +259,7 @@ org.blokada.fem.fdroid
 org.csploit.android
 org.cyanogenmod.wundergroundcmweatherprovider
 org.diasurgical.devilutionx
+org.dicio.dicio_android
 org.droidseries
 org.example.pushupbuddy
 org.fdroid.fdroid.ota
@@ -280,6 +284,7 @@ org.montrealtransit.android.schedule.stmbus
 org.mozilla.klar
 org.mozilla.mozstumbler
 org.mozilla.rocket
+org.npr.android.news
 org.openlp.android
 org.openorienteering.mapper
 org.penghuang.tools.rotationlock

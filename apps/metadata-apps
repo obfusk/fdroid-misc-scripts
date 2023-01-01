@@ -283,6 +283,7 @@ com.aidinhut.simpletextcrypt
 com.aistra.hail
 com.akdev.nofbeventscraper
 com.akop.bach
+com.akshayaap.mouseremote
 com.alaory.wallmewallpaper
 com.alaskalinuxuser.criticalvelocity
 com.alaskalinuxuser.hourglass
@@ -1252,6 +1253,7 @@ com.markuspage.android.certtools
 com.martinborjesson.o2xtouchlednotifications
 com.martinmimigames.littlemusicplayer
 com.martinmimigames.simplefileexplorer
+com.martinmimigames.tinymusicplayer
 com.marv42.ebt.newnote
 com.maskyn.fileeditorpro
 com.massive
@@ -2349,6 +2351,7 @@ deep.ryd.rydplayer
 design.codeux.authpass.fdroid
 dev.atahabaki.wordbook
 dev.atajan.lingva_android
+dev.bartuzen.qbitcontroller
 dev.corruptedark.diditakemymeds
 dev.corruptedark.openchaoschess
 dev.danjackson.noisecancel
@@ -2707,6 +2710,7 @@ info.tangential.cone
 info.tangential.task
 info.varden.hauk
 info.zamojski.soft.towercollector
+info.zverev.ilya.every_door
 info.zwanenburg.caffeinetile
 io.anuke.mindustry
 io.bluewallet.bluewallet
@@ -2854,6 +2858,7 @@ it.angrydroids.epub3reader
 it.collideorscopeapps.codename_hippopotamos
 it.danieleverducci.nextcloudmaps
 it.danieleverducci.ojo
+it.davquar.halfdot
 it.diab
 it.ecosw.dudo
 it.eternitywall.eternitywall
@@ -3274,6 +3279,7 @@ nl.mpcjanssen.simpletask.webdav
 nl.patrickkostjens.kandroid
 nl.rijksoverheid.ctr.holder
 nl.rijksoverheid.ctr.verifier
+nl.tsmeets.todotree
 nl.ttys0.simplec25k
 nl.viter.glider
 nl.yoerinijs.notebuddy
@@ -3756,6 +3762,7 @@ org.openttd.fdroid
 org.osmdroid
 org.osmocom.tacdatabaseclient
 org.ostrya.presencepublisher
+org.outline.android.client
 org.owntracks.android
 org.oxycblt.auxio
 org.pacien.tincapp
@@ -3914,6 +3921,7 @@ org.strawberryforum.argentum
 org.strawberryforum.pollywog
 org.strongswan.android
 org.studip.unofficial_app
+org.stypox.dicio
 org.stypox.tridenta
 org.subsurface
 org.sudowars

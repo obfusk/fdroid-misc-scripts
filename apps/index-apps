@@ -261,6 +261,7 @@ com.aidinhut.simpletextcrypt
 com.aistra.hail
 com.akdev.nofbeventscraper
 com.akop.bach
+com.akshayaap.mouseremote
 com.alaory.wallmewallpaper
 com.alaskalinuxuser.criticalvelocity
 com.alaskalinuxuser.hourglass
@@ -1156,6 +1157,7 @@ com.markuspage.android.atimetracker
 com.martinborjesson.o2xtouchlednotifications
 com.martinmimigames.littlemusicplayer
 com.martinmimigames.simplefileexplorer
+com.martinmimigames.tinymusicplayer
 com.marv42.ebt.newnote
 com.maskyn.fileeditorpro
 com.massive
@@ -2058,6 +2060,7 @@ de.naturalnet.mirwtfapp
 de.nellessen.usercontrolleddecryptionoperations
 de.neuwirthinformatik.alexander.archerystats
 de.neuwirthinformatik.alexander.mtuo
+de.niendo.ImapNotes3
 de.nodomain.tobihille.seniorlauncher
 de.nproth.pin
 de.nucleus.foss_warn
@@ -2419,6 +2422,7 @@ gr.ndre.scuttloid
 gr.ratmole.android.Mach3Pendant
 grmpl.mk.stepandheightcounter
 groomiac.crocodilenote
+groomiac.voicemailplayer
 hans.b.skewy1_0
 hashengineering.darkcoin.wallet
 hashengineering.groestlcoin.wallet
@@ -2497,6 +2501,7 @@ info.tangential.cone
 info.tangential.task
 info.varden.hauk
 info.zamojski.soft.towercollector
+info.zverev.ilya.every_door
 info.zwanenburg.caffeinetile
 io.anuke.mindustry
 io.bmaupin.pitchpipe
@@ -2832,7 +2837,6 @@ nekox.messenger
 net.aangle.rvclock
 net.alaindonesia.silectric
 net.alegen.android.netclip
-net.androgames.level
 net.androidcomics.acv
 net.anzix.osm.upload
 net.artificialworlds.rabbitescape
@@ -3013,6 +3017,7 @@ nl.mpcjanssen.simpletask
 nl.mpcjanssen.simpletask.nextcloud
 nl.mpcjanssen.simpletask.webdav
 nl.patrickkostjens.kandroid
+nl.tsmeets.todotree
 nl.ttys0.simplec25k
 nl.viter.glider
 nl.yoerinijs.notebuddy
@@ -3595,6 +3600,7 @@ org.strawberryforum.argentum
 org.strawberryforum.pollywog
 org.strongswan.android
 org.studip.unofficial_app
+org.stypox.dicio
 org.stypox.tridenta
 org.subsurface
 org.sudowars

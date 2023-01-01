@@ -262,6 +262,7 @@ com.aidinhut.simpletextcrypt
 com.aistra.hail
 com.akdev.nofbeventscraper
 com.akop.bach
+com.akshayaap.mouseremote
 com.alaory.wallmewallpaper
 com.alaskalinuxuser.criticalvelocity
 com.alaskalinuxuser.hourglass
@@ -431,7 +432,6 @@ com.boombuler.widgets.contacts
 com.borneq.heregpslocation
 com.boztalay.puppyframeuid
 com.brapeba.roaminginfo
-com.brentpanther.bitcoincashwidget
 com.brentpanther.bitcoinwidget
 com.brentpanther.ethereumwidget
 com.brentpanther.litecoinwidget
@@ -939,7 +939,6 @@ com.holoplay
 com.hos_dvk.easyphone.full
 com.htruong.inputmethod.latin
 com.hwloc.lstopo
-com.hykwok.CurrencyConverter
 com.hyperionics.fbreader.plugin.tts_plus
 com.iakmds.librecamera
 com.iamtrk.androidexplorer
@@ -1160,6 +1159,7 @@ com.markuspage.android.certtools
 com.martinborjesson.o2xtouchlednotifications
 com.martinmimigames.littlemusicplayer
 com.martinmimigames.simplefileexplorer
+com.martinmimigames.tinymusicplayer
 com.marv42.ebt.newnote
 com.maskyn.fileeditorpro
 com.massive
@@ -1674,7 +1674,6 @@ com.tortel.syslog
 com.tortuca.holoken
 com.totsp.bookworm
 com.totsp.crossword.shortyz
-com.toxtox.philosopherstonewidget
 com.traffar.a24game
 com.traffar.game_of_life
 com.traffar.gomoku
@@ -2182,6 +2181,7 @@ deep.ryd.rydplayer
 design.codeux.authpass.fdroid
 dev.atahabaki.wordbook
 dev.atajan.lingva_android
+dev.bartuzen.qbitcontroller
 dev.corruptedark.diditakemymeds
 dev.corruptedark.openchaoschess
 dev.danjackson.noisecancel
@@ -2509,6 +2509,7 @@ info.tangential.cone
 info.tangential.task
 info.varden.hauk
 info.zamojski.soft.towercollector
+info.zverev.ilya.every_door
 info.zwanenburg.caffeinetile
 io.anuke.mindustry
 io.bluewallet.bluewallet
@@ -2646,6 +2647,7 @@ it.angrydroids.epub3reader
 it.collideorscopeapps.codename_hippopotamos
 it.danieleverducci.nextcloudmaps
 it.danieleverducci.ojo
+it.davquar.halfdot
 it.diab
 it.ecosw.dudo
 it.fabmazz.triestebus
@@ -3029,6 +3031,7 @@ nl.mpcjanssen.simpletask
 nl.mpcjanssen.simpletask.nextcloud
 nl.mpcjanssen.simpletask.webdav
 nl.patrickkostjens.kandroid
+nl.tsmeets.todotree
 nl.ttys0.simplec25k
 nl.viter.glider
 nl.yoerinijs.notebuddy
@@ -3186,7 +3189,6 @@ org.developfreedom.ccdroid.app
 org.developfreedom.logmein
 org.developfreedom.wordpowermadeeasy
 org.dgtale.icsimport
-org.dicio.dicio_android
 org.disroot.disrootapp
 org.disrupted.rumble
 org.diygenomics.pg
@@ -3439,7 +3441,6 @@ org.nitri.opentopo
 org.noise_planet.noisecapture
 org.nonononoki.hendroid
 org.notabug.lifeuser.moviedb
-org.npr.android.news
 org.ntpsync
 org.numixproject.iconsubmit
 org.nuntius35.wrongpinshutdown
@@ -3472,6 +3473,7 @@ org.openttd.fdroid
 org.osmdroid
 org.osmocom.tacdatabaseclient
 org.ostrya.presencepublisher
+org.outline.android.client
 org.owntracks.android
 org.oxycblt.auxio
 org.pacien.tincapp
@@ -3615,6 +3617,7 @@ org.strawberryforum.argentum
 org.strawberryforum.pollywog
 org.strongswan.android
 org.studip.unofficial_app
+org.stypox.dicio
 org.stypox.tridenta
 org.subsurface
 org.sudowars
