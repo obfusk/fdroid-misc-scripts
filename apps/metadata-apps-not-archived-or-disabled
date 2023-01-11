@@ -391,6 +391,7 @@ com.autismprime.fall
 com.autismprime.krassesSpiel
 com.averi.worldscribe
 com.b44t.messenger
+com.bagaturchess
 com.bald.uriah.baldphone
 com.banasiak.coinflip
 com.banasiak.coinflipext.example
@@ -1261,6 +1262,7 @@ com.nazmar.dicegainz
 com.nbossard.packlist
 com.nephi.getoffyourphone
 com.nephoapp.anarxiv
+com.nesbox.tic
 com.nesswit.galbijjimsearcher
 com.netthreads.android.noiz2
 com.neumorphic.calculator
@@ -1347,6 +1349,7 @@ com.outerworldapps.wairtonow
 com.owncloud.android
 com.packetsender.android
 com.palliser.nztides
+com.paranoiaworks.unicus.android.sse
 com.paranoid.ParanoidWallpapers
 com.parishod.watomatic
 com.passcard
@@ -1645,6 +1648,7 @@ com.tinkerlog.android.pongtime
 com.tioui.opensound
 com.tistory.deque.previewmaker
 com.tiwa.pl
+com.tjEnterprises.phase10Counter
 com.tjk104.openfndds
 com.tjm.crushr
 com.tjm.stripepaper
@@ -1857,6 +1861,7 @@ cz.eutopia.snooperstopper
 cz.harvie.northdog
 cz.hejl.chesswalk
 cz.hernik.kaku
+cz.hernikplays.opencanteen
 cz.jiriskorpil.amixerwebui
 cz.jirkovsky.lukas.chmupocasi
 cz.lastaapps.menza
@@ -2856,6 +2861,7 @@ net.asceai.meritous
 net.avs234
 net.basov.lws.fdroid
 net.basov.lws.qr.fdroid
+net.basov.omn.fdroid
 net.bible.android.activity
 net.bierbaumer.otp_authenticator
 net.bitconomy.ckpoolwatcher
@@ -3188,6 +3194,7 @@ org.deluge.trireme
 org.developfreedom.ccdroid.app
 org.developfreedom.logmein
 org.developfreedom.wordpowermadeeasy
+org.develz.crawl
 org.dgtale.icsimport
 org.disroot.disrootapp
 org.disrupted.rumble
@@ -3248,6 +3255,7 @@ org.fitchfamily.android.dejavu
 org.fitchfamily.android.gsmlocation
 org.fitchfamily.android.symphony
 org.fitchfamily.android.wifi_backend
+org.flare.app
 org.floens.chan
 org.flyve.inventory.agent
 org.flyve.mdm.agent.mqtt
@@ -4021,6 +4029,7 @@ xyz.myachin.downloader
 xyz.myachin.saveto
 xyz.zedler.patrick.doodle
 xyz.zedler.patrick.grocy
+yetzio.yetcalc
 ymakei.vegetarian_journal
 z4pp3r.flashlightwidget
 za.co.lukestonehm.logicaldefence

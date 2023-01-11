@@ -390,6 +390,7 @@ com.autismprime.fall
 com.autismprime.krassesSpiel
 com.averi.worldscribe
 com.b44t.messenger
+com.bagaturchess
 com.bald.uriah.baldphone
 com.banasiak.coinflip
 com.banasiak.coinflipext.example
@@ -431,7 +432,6 @@ com.boombuler.widgets.contacts
 com.borneq.heregpslocation
 com.boztalay.puppyframeuid
 com.brapeba.roaminginfo
-com.brentpanther.bitcoincashwidget
 com.brentpanther.bitcoinwidget
 com.brentpanther.ethereumwidget
 com.brentpanther.litecoinwidget
@@ -937,7 +937,6 @@ com.holoplay
 com.hos_dvk.easyphone.full
 com.htruong.inputmethod.latin
 com.hwloc.lstopo
-com.hykwok.CurrencyConverter
 com.hyperionics.fbreader.plugin.tts_plus
 com.iakmds.librecamera
 com.iamtrk.androidexplorer
@@ -1344,6 +1343,7 @@ com.outerworldapps.wairtonow
 com.owncloud.android
 com.packetsender.android
 com.palliser.nztides
+com.paranoiaworks.unicus.android.sse
 com.paranoid.ParanoidWallpapers
 com.parishod.watomatic
 com.passcard
@@ -1512,6 +1512,7 @@ com.sevag.unrealtracker
 com.sgr_b2.compass
 com.shabinder.spotiflyer
 com.shadcat.secdroid
+com.shadow.blackhole
 com.shanewmiller.gorecompanion
 com.shatteredpixel.shatteredpixeldungeon
 com.shkmishra.lyrically
@@ -1639,6 +1640,7 @@ com.tinkerlog.android.pongtime
 com.tioui.opensound
 com.tistory.deque.previewmaker
 com.tiwa.pl
+com.tjEnterprises.phase10Counter
 com.tjk104.openfndds
 com.tjm.crushr
 com.tjm.stripepaper
@@ -1668,7 +1670,6 @@ com.tortel.syslog
 com.tortuca.holoken
 com.totsp.bookworm
 com.totsp.crossword.shortyz
-com.toxtox.philosopherstonewidget
 com.traffar.a24game
 com.traffar.game_of_life
 com.traffar.gomoku
@@ -1851,6 +1852,7 @@ cz.eutopia.snooperstopper
 cz.harvie.northdog
 cz.hejl.chesswalk
 cz.hernik.kaku
+cz.hernikplays.opencanteen
 cz.jiriskorpil.amixerwebui
 cz.jirkovsky.lukas.chmupocasi
 cz.lastaapps.menza
@@ -2175,6 +2177,7 @@ deep.ryd.rydplayer
 design.codeux.authpass.fdroid
 dev.atahabaki.wordbook
 dev.atajan.lingva_android
+dev.bartuzen.qbitcontroller
 dev.corruptedark.diditakemymeds
 dev.corruptedark.openchaoschess
 dev.danjackson.noisecancel
@@ -2637,6 +2640,7 @@ it.angrydroids.epub3reader
 it.collideorscopeapps.codename_hippopotamos
 it.danieleverducci.nextcloudmaps
 it.danieleverducci.ojo
+it.davquar.halfdot
 it.diab
 it.ecosw.dudo
 it.fabmazz.triestebus
@@ -2844,6 +2848,7 @@ net.asceai.meritous
 net.avs234
 net.basov.lws.fdroid
 net.basov.lws.qr.fdroid
+net.basov.omn.fdroid
 net.bible.android.activity
 net.bierbaumer.otp_authenticator
 net.bitconomy.ckpoolwatcher
@@ -3175,7 +3180,6 @@ org.developfreedom.ccdroid.app
 org.developfreedom.logmein
 org.developfreedom.wordpowermadeeasy
 org.dgtale.icsimport
-org.dicio.dicio_android
 org.disroot.disrootapp
 org.disrupted.rumble
 org.diygenomics.pg
@@ -3425,7 +3429,6 @@ org.ninthfloor.copperpdf
 org.nitri.opentopo
 org.noise_planet.noisecapture
 org.notabug.lifeuser.moviedb
-org.npr.android.news
 org.ntpsync
 org.numixproject.iconsubmit
 org.nuntius35.wrongpinshutdown
@@ -3458,6 +3461,7 @@ org.openttd.fdroid
 org.osmdroid
 org.osmocom.tacdatabaseclient
 org.ostrya.presencepublisher
+org.outline.android.client
 org.oxycblt.auxio
 org.pacien.tincapp
 org.paladyn.mediclog
@@ -4003,6 +4007,7 @@ xyz.myachin.downloader
 xyz.myachin.saveto
 xyz.zedler.patrick.doodle
 xyz.zedler.patrick.grocy
+yetzio.yetcalc
 ymakei.vegetarian_journal
 z4pp3r.flashlightwidget
 za.co.lukestonehm.logicaldefence
