@@ -3,14 +3,14 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 set -e
 export LC_ALL=C.UTF-8
-zfe_sha1=7170680469ab42a97fe39d10011c5b72971a57a4
+zfe_base64=UEsDBAAAAAAAACEIIQIAAAAAAAAAAAAAAAAAAA==
 if [ $# = 0 ]; then
   apks=( *.apk )
 else
   apks=( "$@" )
 fi
 for apk in "${apks[@]}"; do
-  if [ "$( head -c28 "$apk" | shasum | cut -c-40 )" = "$zfe_sha1" ]; then
+  if [ "$( head -c28 "$apk" | base64 )" = "$zfe_base64" ]; then
     echo "$apk"
   fi
 done
