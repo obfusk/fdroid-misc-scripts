@@ -1,11 +1,11 @@
 Publishing apps with Reproducible Builds: https://f-droid.org/docs/Reproducible_Builds/  
 Verification builds: https://f-droid.org/docs/Verification_Server/  
 Scripts and data: https://github.com/obfusk/fdroid-misc-scripts  
-Last updated: 2023-01-01
+Last updated: 2023-02-01
 
 ### Signatures in metadata: publishing both (upstream) developer-signed and F-Droid-signed APKs
 
-#### {2022-{11,12},2023-01}-01: 6 apps
+#### {2022-{11,12},2023-{01,02}}-01: 6 apps
 
 All apps (includes 1 no longer RB, making 7):
 
@@ -105,6 +105,32 @@ org.greatfire.wikiunblocked.fdroid [signflinger]
 
 Signed with [`signflinger`](https://github.com/obfusk/apksigcopier#what-about-apks-signed-by-gradlezipflingersignflinger-instead-of-apksigner): 14 apps.
 
+#### 2023-02-01: 54 apps (+ 13)
+
+Newly added (none were removed):
+
+<details>
+
+```
+InfinityLoop1309.NewPipeEnhanced [signflinger]
+com.akansh.fileserversuit [signflinger]
+com.nima.demomusix [signflinger]
+com.nima.taskmanager
+com.nima.wikianime [signflinger]
+com.paranoiaworks.unicus.android.sse [signflinger]
+com.razeeman.util.simpletimetracker [signflinger]
+com.starry.myne
+de.andicodes.vergissnix
+deltazero.amarok.foss
+io.github.yamin8000.dooz [signflinger]
+org.localsend.localsend_app [signflinger]
+yetzio.yetcalc [signflinger]
+```
+
+</details>
+
+Signed with [`signflinger`](https://github.com/obfusk/apksigcopier#what-about-apks-signed-by-gradlezipflingersignflinger-instead-of-apksigner): 23 apps.
+
 ---
 
-Total number of apps using RB: 6 + 41 = 47.
+Total number of apps using RB: 6 + 54 = 60.
