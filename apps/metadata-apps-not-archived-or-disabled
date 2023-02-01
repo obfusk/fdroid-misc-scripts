@@ -1,4 +1,5 @@
 An.stop
+InfinityLoop1309.NewPipeEnhanced
 SpeedoMeterApp.main
 a2dp.Vol
 aarddict.android
@@ -44,6 +45,7 @@ app.reading.stoic.stoicreading
 app.reading.stoic.stoicreading2
 app.seeneva.reader
 app.shosetsu.android.fdroid
+app.simple.inure
 app.tice.TICE.production
 app.varlorg.unote
 app.weatheroverview
@@ -260,6 +262,7 @@ com.agoradesk.app
 com.ahorcado
 com.aidinhut.simpletextcrypt
 com.aistra.hail
+com.akansh.fileserversuit
 com.akdev.nofbeventscraper
 com.akop.bach
 com.akshayaap.mouseremote
@@ -1185,7 +1188,6 @@ com.maxistar.textpad
 com.mcsnowflake.worktimer
 com.mde.potdroid
 com.mdiqentw.lifedots
-com.mdroid
 com.mehmetakiftutuncu.eshotroid
 com.memetro.android
 com.mendhak.conscryptprovider
@@ -1285,6 +1287,9 @@ com.nikhiljha.lobstersapp
 com.nikola.jakshic.dagger
 com.nilhcem.frcndict
 com.nilhcem.hostseditor
+com.nima.demomusix
+com.nima.taskmanager
+com.nima.wikianime
 com.niparasc.papanikolis
 com.nishantboro.splititeasy
 com.nitish.privacyindicator
@@ -1386,6 +1391,7 @@ com.platypus.dicer
 com.plexer0.nitter
 com.pluscubed.matloglibre
 com.plusonelabs.calendar
+com.pocket_plan.j7_003
 com.podverse.fdroid
 com.poinsart.votar
 com.polar.nextcloudservices
@@ -1431,6 +1437,7 @@ com.rascarlo.arch.packages
 com.rascarlo.aurdroid
 com.rascarlo.power.button.tile
 com.rastating.droidbeard
+com.razeeman.util.simpletimetracker
 com.readrops.app
 com.readystatesoftware.ghostlog
 com.rechnen.app
@@ -1580,6 +1587,7 @@ com.ssaurel.clocklw
 com.standardnotes
 com.starapps.tools.tnefextractor
 com.starry.greenstash
+com.starry.myne
 com.stealthcotper.networktools
 com.stonegate.tsacdop
 com.stoptheballs
@@ -1878,6 +1886,7 @@ dasher.android
 de.Cherubin7th.blackscreenpresentationremote
 de.HS_Aalen.don
 de.akaflieg_freiburg.enroute
+de.andicodes.vergissnix
 de.antonarnold.android.xoverrideheadphonejackdetection
 de.antonfluegge.android.yubnubwidgetadfree
 de.antonwolf.agendawidget
@@ -2055,6 +2064,7 @@ de.meonwax.soundboard
 de.metager.metagerapp.fdroid
 de.micmun.android.deufeitage
 de.micmun.android.nextcloudcookbook
+de.mm20.launcher2.release
 de.moekadu.metronome
 de.moekadu.tuner
 de.monocles.browser
@@ -2183,6 +2193,7 @@ de.yazo_games.mensaguthaben
 de.zieren.rot13
 deckers.thibault.aves.libre
 deep.ryd.rydplayer
+deltazero.amarok.foss
 design.codeux.authpass.fdroid
 dev.atahabaki.wordbook
 dev.atajan.lingva_android
@@ -2454,6 +2465,7 @@ hu.vsza.adsdroid
 i4nc4mp.myLock
 idv.markkuo.ambitsync
 ie.defo.ech_apps
+ie.equalit.ceno
 im.fdx.v2ex
 im.nfc.nfsee
 im.quicksy.client
@@ -2524,6 +2536,7 @@ io.davidar.fabularium
 io.davidar.tensor
 io.ente.photos.fdroid
 io.github.alketii.mightyknight
+io.github.aoc_normal
 io.github.benoitduffez.cupsprint
 io.github.chiver
 io.github.chronosx88.yggdrasil
@@ -2588,6 +2601,7 @@ io.github.webbluetoothcg.bletestperipheral
 io.github.whirish.tvbuses
 io.github.wulkanowy
 io.github.x0b.rcx
+io.github.yamin8000.dooz
 io.github.yawnoc.strokeinput
 io.github.yoshi1123.adbio
 io.github.z3r0c00l_2k.aquadroid
@@ -2677,6 +2691,7 @@ it.rignanese.leo.slimtwitter
 it.sineo.android.noFrillsCPUClassic
 it.skarafaz.mercury
 it.vfsfitvnm.vimusic
+it.zitzusoft.lyrics_2
 italian.said.fran.theitaliansaid
 itkach.aard2
 ivl.android.moneybalance
@@ -3389,6 +3404,7 @@ org.ligi.survivalmanual
 org.ligi.vaporizercontrol
 org.linaro.glmark2
 org.linphone
+org.localsend.localsend_app
 org.logicallycreative.movingpolygons
 org.lufebe16.pysolfc
 org.lumicall.android
@@ -3703,6 +3719,7 @@ org.wiktionary
 org.windvolt
 org.witness.sscphase1
 org.woheller69.TimeLapseCam
+org.woheller69.arity
 org.woheller69.audio_analyzer_for_android
 org.woheller69.audiometry
 org.woheller69.eggtimer
@@ -3804,6 +3821,7 @@ ro.ieval.fonbot
 ro.ioanm.fissh
 ro.radioromaniaactualitati.podcasts
 ro.ui.pttdroid
+rocks.mucke
 rocks.poopjournal.flashy
 rocks.poopjournal.morse
 rocks.poopjournal.todont
