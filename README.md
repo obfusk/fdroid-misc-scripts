@@ -1,6 +1,13 @@
+<!-- SPDX-FileCopyrightText: 2023 FC Stegerman <flx@obfusk.net> -->
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+
+[![AGPLv3+](https://img.shields.io/badge/license-AGPLv3+-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
+
 # fdroid-misc-scripts
 
 miscellaneous scripts to analyse f-droid app data
+
+![rb](graphs/rb.png)
 
 ## Setup
 
@@ -9,6 +16,13 @@ $ git clone https://github.com/obfusk/fdroid-misc-scripts.git
 $ cd fdroid-misc-scripts
 $ git clone https://gitlab.com/fdroid/fdroiddata.git
 ```
+
+### Dependencies
+
+`detect-blocks-fdroiddata.sh`, `detect-blocks.sh`, and `detect-signflinger.sh`
+require [`apksigtool`](https://github.com/obfusk/apksigtool),
+`download-index.sh` uses it when available; `create-graphs.py` requires
+`matplotlib` (e.g. `apt install python3-matplotlib`).
 
 ## Scripts
 
