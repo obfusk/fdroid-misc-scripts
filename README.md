@@ -53,6 +53,27 @@ some.other.app.id                                             all builds disable
 [...]
 ```
 
+#### update-stats.sh
+
+Update `stats/YYYY-MM-DD-apps`.
+
+NB: this doesn't *modify* `fdroiddata`, but it does check out the first commit
+on the specified date (and then `master`).
+
+```sh
+$ ./scripts/update-stats.sh 2022-11-01
+$ ./scripts/update-stats.sh 2022-12-01
+```
+
+#### update-diffs.sh
+
+Update `stats/YYYY-MM-DD-{adds,rems}` &
+`reproducible/YYYY-MM-DD-{bins,sigs}-{adds,rems}`.
+
+```sh
+$ ./scripts/update-diffs.sh
+```
+
 ### Reproducible Builds: Overview
 
 #### update-rb.sh
@@ -94,14 +115,6 @@ org.torproject.torservices
 ```
 
 </details>
-
-To see what changed between two dates, you can use e.g.:
-
-```sh
-$ cd reproducible
-$ diff -Naur 2022-{11,12}-01-bins | grep ^+ | cut -c2- | tail -n +2   # added
-$ diff -Naur 2022-{11,12}-01-bins | grep ^- | cut -c2- | tail -n +2   # removed
-```
 
 #### create-rb-graphs.py
 
