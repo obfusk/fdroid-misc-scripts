@@ -55,15 +55,6 @@ some.other.app.id                                             all builds disable
 
 ### Reproducible Builds: Overview
 
-#### create-rb-graphs.py
-
-Create `reproducible/{bins,sigs,rb}.png` graphs from the
-`reproducible/YYYY-MM-DD-{bins,sigs}` files.
-
-```sh
-$ ./scripts/create-rb-graphs.py
-```
-
 #### update-rb.sh
 
 Creates `reproducible/YYYY-MM-DD-{bins,sigs}`: an overview of the apps using
@@ -110,6 +101,15 @@ To see what changed between two dates, you can use e.g.:
 $ cd reproducible
 $ diff -Naur 2022-{11,12}-01-bins | grep ^+ | cut -c2- | tail -n +2   # added
 $ diff -Naur 2022-{11,12}-01-bins | grep ^- | cut -c2- | tail -n +2   # removed
+```
+
+#### create-rb-graphs.py
+
+Create `reproducible/{bins,sigs,rb}.png` graphs from the
+`reproducible/YYYY-MM-DD-{bins,sigs}` files.
+
+```sh
+$ ./scripts/create-rb-graphs.py
 ```
 
 #### update-rb-signflinger.sh
