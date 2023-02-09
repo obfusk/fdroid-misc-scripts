@@ -116,13 +116,15 @@ org.torproject.torservices
 
 </details>
 
-#### create-rb-graphs.py
+#### create-graphs.py
 
-Create `graps/{bins,sigs,rb}.png` graphs from the
-`reproducible/YYYY-MM-DD-{bins,sigs}` files.
+Create `graphs/{bins,sigs,rb}.png` graphs from the
+`reproducible/YYYY-MM-DD-{bins,sigs}` files and `graphs/adds.png` from the
+`stats/YYYY-MM-DD-{adds,rems}` &
+`reproducible/YYYY-MM-DD-{bins,sigs}-{adds,rems}` files.
 
 ```sh
-$ ./scripts/create-rb-graphs.py
+$ ./scripts/create-graphs.py
 ```
 
 #### update-rb-signflinger.sh
