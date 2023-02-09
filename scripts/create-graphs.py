@@ -11,11 +11,11 @@ import matplotlib.pyplot as plt     # type: ignore[import]
 import numpy as np
 
 
-def read_rb_data(files: List[str]) -> Any:
+def read_rb_data(dates: List[str], what: str) -> Any:
     data = []
-    for f in files:
+    for d in dates:
         repro = disabled = missing = 0
-        with open(f) as fh:
+        with open(f"reproducible/{d}-{what}") as fh:
             for line in fh:
                 line = line.rstrip()
                 if " " in line:
@@ -94,12 +94,12 @@ def create_graphs() -> None:
     dates = [os.path.basename(f)[:-5] for f in sorted(glob.glob("reproducible/*-bins"))]
 
     title_bins = "Apps published with Reproducible Builds (Binaries)"
-    data_bins = read_rb_data(sorted(glob.glob("reproducible/*-bins")))
+    data_bins = read_rb_data(dates, "bins")
     plot_rb_data(title_bins, dates, data_bins)
     plt.savefig("graphs/bins.png")
 
     title_sigs = "Apps published with Reproducible Builds (signatures in metadata)"
-    data_sigs = read_rb_data(sorted(glob.glob("reproducible/*-sigs")))
+    data_sigs = read_rb_data(dates, "sigs")
     plot_rb_data(title_sigs, dates, data_sigs)
     plt.savefig("graphs/sigs.png")
 
