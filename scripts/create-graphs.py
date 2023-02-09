@@ -47,7 +47,7 @@ def read_adds_data(dates: List[str]) -> Any:
             print(f"WARNING: new_repro apps not in new_total on {d}:")
             for appid in sorted(new_repro - new_total):
                 print(f"  {appid}")
-        data.append([len(new_total - new_repro), len(new_repro)])
+        data.append([len(new_repro), len(new_total - new_repro)])
     return np.transpose(data)
 
 
@@ -63,8 +63,8 @@ def plot_rb_data(title: str, dates: List[str], data: Any) -> None:
 
 
 def plot_adds_data(title: str, dates: List[str], data: Any) -> None:
-    labels = ["other", "reproducible"]
-    colors = ["blue", "green"]
+    labels = ["reproducible", "other"]
+    colors = ["green", "blue"]
     _, ax = plt.subplots()
     ax.stackplot(dates, np.vstack(data), labels=labels, colors=colors, alpha=0.8)
     ax.legend(loc="upper left")
