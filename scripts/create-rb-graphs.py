@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 import glob
+import os
 
 from typing import Any, List, Tuple
 
@@ -30,7 +31,7 @@ def read_data(files: List[str]) -> Tuple[List[str], Any]:
                 else:
                     repro += 1
         data.append([repro, disabled, missing])
-    return [f[:-5] for f in files], np.transpose(data)
+    return [os.path.basename(f)[:-5] for f in files], np.transpose(data)
 
 
 def plot_data(title: str, dates: List[str], data: Any) -> None:
@@ -46,20 +47,20 @@ def plot_data(title: str, dates: List[str], data: Any) -> None:
 
 def main() -> None:
     title_b = "Apps published with Reproducible Builds (Binaries)"
-    dates_b, data_b = read_data(sorted(glob.glob("*-bins")))
+    dates_b, data_b = read_data(sorted(glob.glob("reproducible/*-bins")))
     plot_data(title_b, dates_b, data_b)
-    plt.savefig("bins.png")
+    plt.savefig("reproducible/bins.png")
 
     title_s = "Apps published with Reproducible Builds (signatures in metadata)"
-    dates_s, data_s = read_data(sorted(glob.glob("*-sigs")))
+    dates_s, data_s = read_data(sorted(glob.glob("reproducible/*-sigs")))
     plot_data(title_s, dates_s, data_s)
-    plt.savefig("sigs.png")
+    plt.savefig("reproducible/sigs.png")
 
     assert dates_b == dates_s
 
     title_a = "Apps published with Reproducible Builds (all)"
     plot_data(title_a, dates_b, data_b + data_s)
-    plt.savefig("rb.png")
+    plt.savefig("reproducible/rb.png")
 
 
 if __name__ == "__main__":
