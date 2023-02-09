@@ -55,6 +55,15 @@ some.other.app.id                                             all builds disable
 
 ### Reproducible Builds: Overview
 
+#### create-rb-graphs.py
+
+Create `bins.png` & `sigs.png` graphs from the `YYYY-MM-DD-{bins,sigs}` files.
+
+```sh
+$ cd reproducible
+$ ../scripts/create-rb-graphs.py
+```
+
 #### update-rb.sh
 
 Creates `reproducible/YYYY-MM-DD-{bins,sigs}`: an overview of the apps using
