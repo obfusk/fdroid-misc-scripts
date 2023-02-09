@@ -5,7 +5,7 @@
 import glob
 import os
 
-from typing import Any, List
+from typing import Any, List, Optional
 
 import matplotlib.pyplot as plt     # type: ignore[import]
 import numpy as np
@@ -31,6 +31,23 @@ def read_rb_data(dates: List[str], what: str) -> Any:
                 else:
                     repro += 1
         data.append([repro, disabled, missing])
+    return np.transpose(data)
+
+
+def read_apps_data(dates: List[str]) -> Any:
+    data = []
+    for d in dates:
+        with open(f"stats/{d}-apps") as fh:
+            total = set(line.rstrip() for line in fh)
+        with open(f"reproducible/{d}-bins") as fh:
+            repro = set(line.split()[0] for line in fh)
+        with open(f"reproducible/{d}-sigs") as fh:
+            repro |= set(line.split()[0] for line in fh)
+        if not repro.issubset(total):
+            print(f"WARNING: repro apps not in total on {d}:")
+            for appid in sorted(repro - total):
+                print(f"  {appid}")
+        data.append([len(repro), len(total - repro)])
     return np.transpose(data)
 
 
@@ -71,23 +88,24 @@ def read_rems_data(dates: List[str]) -> Any:
 def plot_rb_data(title: str, dates: List[str], data: Any) -> None:
     labels = ["reproducible", "disabled", "missing"]
     colors = ["green", "red", "orange"]
-    _, ax = plt.subplots()
-    ax.stackplot(dates, np.vstack(data), labels=labels, colors=colors, alpha=0.8)
-    ax.legend(loc="upper left")
-    ax.set_title(title)
-    ax.set_xlabel("Date")
-    ax.set_ylabel("Number of apps")
+    plot_data(title, dates, data, labels=labels, colors=colors)
 
 
-def plot_adds_rems_data(title: str, dates: List[str], data: Any, what: str) -> None:
+def plot_apps_data(title: str, dates: List[str], data: Any, *,
+                   ylabel: Optional[str] = None) -> None:
     labels = ["reproducible", "other"]
     colors = ["green", "blue"]
+    plot_data(title, dates, data, labels=labels, colors=colors, ylabel=ylabel)
+
+
+def plot_data(title: str, dates: List[str], data: Any, *, labels: List[str],
+              colors: List[str], ylabel: Optional[str] = None) -> None:
     _, ax = plt.subplots()
     ax.stackplot(dates, np.vstack(data), labels=labels, colors=colors, alpha=0.8)
     ax.legend(loc="upper left")
     ax.set_title(title)
     ax.set_xlabel("Date")
-    ax.set_ylabel(f"Number of {what} apps")
+    ax.set_ylabel(ylabel or "Number of apps")
 
 
 def create_graphs() -> None:
@@ -107,14 +125,19 @@ def create_graphs() -> None:
     plot_rb_data(title_all, dates, data_bins + data_sigs)
     plt.savefig("graphs/rb.png")
 
+    title_apps = "F-Droid apps (not 100% accurate)"
+    data_apps = read_apps_data(dates)
+    plot_apps_data(title_apps, dates, data_apps)
+    plt.savefig("graphs/apps.png")
+
     title_adds = "New apps (not 100% accurate)"
     data_adds = read_adds_data(dates[1:])
-    plot_adds_rems_data(title_adds, dates[1:], data_adds, "new")
+    plot_apps_data(title_adds, dates[1:], data_adds, ylabel="Number of new apps")
     plt.savefig("graphs/adds.png")
 
     title_rems = "Removed apps (not 100% accurate)"
     data_rems = read_rems_data(dates[1:])
-    plot_adds_rems_data(title_rems, dates[1:], data_rems, "removed")
+    plot_apps_data(title_rems, dates[1:], data_rems, ylabel="Number of removed apps")
     plt.savefig("graphs/rems.png")
 
 
