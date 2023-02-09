@@ -57,7 +57,8 @@ some.other.app.id                                             all builds disable
 
 #### create-rb-graphs.py
 
-Create `bins.png` & `sigs.png` graphs from the `YYYY-MM-DD-{bins,sigs}` files.
+Create `bins.png`, `sigs.png`, and `rb.png` graphs from the
+`YYYY-MM-DD-{bins,sigs}` files.
 
 ```sh
 $ cd reproducible

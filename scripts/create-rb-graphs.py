@@ -44,20 +44,23 @@ def plot_data(title: str, dates: List[str], data: Any) -> None:
     ax.set_ylabel("Number of apps")
 
 
-def plot_and_save_bins() -> None:
-    title = "Apps published with Reproducible Builds (Binaries)"
-    dates, data = read_data(sorted(glob.glob("*-bins")))
-    plot_data(title, dates, data)
+def main() -> None:
+    title_b = "Apps published with Reproducible Builds (Binaries)"
+    dates_b, data_b = read_data(sorted(glob.glob("*-bins")))
+    plot_data(title_b, dates_b, data_b)
     plt.savefig("bins.png")
 
-
-def plot_and_save_sigs() -> None:
-    title = "Apps published with Reproducible Builds (signatures in metadata)"
-    dates, data = read_data(sorted(glob.glob("*-sigs")))
-    plot_data(title, dates, data)
+    title_s = "Apps published with Reproducible Builds (signatures in metadata)"
+    dates_s, data_s = read_data(sorted(glob.glob("*-sigs")))
+    plot_data(title_s, dates_s, data_s)
     plt.savefig("sigs.png")
+
+    assert dates_b == dates_s
+
+    title_a = "Apps published with Reproducible Builds (all)"
+    plot_data(title_a, dates_b, data_b + data_s)
+    plt.savefig("rb.png")
 
 
 if __name__ == "__main__":
-    plot_and_save_bins()
-    plot_and_save_sigs()
+    main()
