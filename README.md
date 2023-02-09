@@ -118,7 +118,7 @@ org.torproject.torservices
 
 #### create-rb-graphs.py
 
-Create `reproducible/{bins,sigs,rb}.png` graphs from the
+Create `graps/{bins,sigs,rb}.png` graphs from the
 `reproducible/YYYY-MM-DD-{bins,sigs}` files.
 
 ```sh

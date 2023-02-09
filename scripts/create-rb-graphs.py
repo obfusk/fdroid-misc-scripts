@@ -49,18 +49,18 @@ def main() -> None:
     title_b = "Apps published with Reproducible Builds (Binaries)"
     dates_b, data_b = read_data(sorted(glob.glob("reproducible/*-bins")))
     plot_data(title_b, dates_b, data_b)
-    plt.savefig("reproducible/bins.png")
+    plt.savefig("graphs/bins.png")
 
     title_s = "Apps published with Reproducible Builds (signatures in metadata)"
     dates_s, data_s = read_data(sorted(glob.glob("reproducible/*-sigs")))
     plot_data(title_s, dates_s, data_s)
-    plt.savefig("reproducible/sigs.png")
+    plt.savefig("graphs/sigs.png")
 
     assert dates_b == dates_s
 
     title_a = "Apps published with Reproducible Builds (all)"
     plot_data(title_a, dates_b, data_b + data_s)
-    plt.savefig("reproducible/rb.png")
+    plt.savefig("graphs/rb.png")
 
 
 if __name__ == "__main__":
