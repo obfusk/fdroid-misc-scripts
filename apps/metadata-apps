@@ -1393,6 +1393,7 @@ com.nikola.jakshic.dagger
 com.nilhcem.frcndict
 com.nilhcem.hostseditor
 com.nima.demomusix
+com.nima.mymood
 com.nima.taskmanager
 com.nima.wikianime
 com.niparasc.papanikolis
@@ -2815,6 +2816,7 @@ io.githubfede0d.planetrider
 io.gitlab.allenb1.todolist
 io.gitlab.cryptographic_id
 io.gitlab.danielrparks.vibrato
+io.gitlab.listentogether
 io.gitlab.mudassir.youtubecacher
 io.gresse.hugo.anecdote
 io.heckel.ntfy
@@ -3042,6 +3044,7 @@ me.shrimadhavuk.numselapp
 me.shrimadhavuk.watransmitter
 me.tagavari.airmessage
 me.thanel.dank
+me.timschneeberger.rootlessjamesdsp
 me.tripsit.tripmobile
 me.tsukanov.counter
 me.wenxinwang.pulsedroidrtp
@@ -3571,8 +3574,11 @@ org.gittner.osmbugs
 org.glpi.inventory.agent
 org.glucosio.android
 org.gmote.client.android
+org.gnu.emacs
 org.gnu.icecat
 org.gnucash.android
+org.godotengine.editor.v3
+org.godotengine.editor.v4
 org.grapentin.apps.exceer
 org.greatfire.wikiunblocked.fdroid
 org.gringene.colourclock
@@ -3674,6 +3680,7 @@ org.ligi.fahrplan
 org.ligi.fast
 org.ligi.faster
 org.ligi.gobandroid_hd
+org.ligi.gobandroidhd.ai.gnugo
 org.ligi.ipfsdroid
 org.ligi.materialteatimer
 org.ligi.passandroid
@@ -4293,6 +4300,7 @@ tk.elevenk.dailybread
 tk.giesecke.disaster_radio
 tk.giesecke.painlessmesh
 tk.giesecke.phoenix
+tk.hack5.treblecheck
 tk.jordynsmediagroup.simpleirc.fdroid
 tk.radioactivemineral.metronome
 tk.superl2.xwifi
@@ -4369,6 +4377,7 @@ vocabletrainer.heinecke.aron.vocabletrainer
 vu.de.urpool.quickdroid
 wangdaye.com.geometricweather
 wb.receiptspro
+website.leifs.delta.foss
 wiseguys.radar
 ws.xsoh.etar
 wsdfhjxc.taponium

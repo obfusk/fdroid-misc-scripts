@@ -1581,6 +1581,7 @@ com.ssaurel.clocklw
 com.standardnotes
 com.starapps.tools.tnefextractor
 com.starry.greenstash
+com.starry.myne
 com.stealthcotper.networktools
 com.stonegate.tsacdop
 com.stoptheballs
@@ -1877,6 +1878,7 @@ dasher.android
 de.Cherubin7th.blackscreenpresentationremote
 de.HS_Aalen.don
 de.akaflieg_freiburg.enroute
+de.andicodes.vergissnix
 de.antonarnold.android.xoverrideheadphonejackdetection
 de.antonfluegge.android.yubnubwidgetadfree
 de.antonwolf.agendawidget
@@ -2183,6 +2185,7 @@ de.yazo_games.mensaguthaben
 de.zieren.rot13
 deckers.thibault.aves.libre
 deep.ryd.rydplayer
+deltazero.amarok.foss
 design.codeux.authpass.fdroid
 dev.atahabaki.wordbook
 dev.atajan.lingva_android
@@ -2587,6 +2590,7 @@ io.github.webbluetoothcg.bletestperipheral
 io.github.whirish.tvbuses
 io.github.wulkanowy
 io.github.x0b.rcx
+io.github.yamin8000.dooz
 io.github.yawnoc.strokeinput
 io.github.yoshi1123.adbio
 io.github.z3r0c00l_2k.aquadroid
@@ -3567,6 +3571,7 @@ org.scoutant.rpn
 org.scummvm.scummvm
 org.seamapdroid
 org.secuso.privacyfriendly2048
+org.secuso.privacyfriendlyactivitytracker
 org.secuso.privacyfriendlybackup
 org.secuso.privacyfriendlyboardgameclock
 org.secuso.privacyfriendlycircuittraining
@@ -3697,6 +3702,7 @@ org.wiktionary
 org.windvolt
 org.witness.sscphase1
 org.woheller69.TimeLapseCam
+org.woheller69.arity
 org.woheller69.audio_analyzer_for_android
 org.woheller69.audiometry
 org.woheller69.eggtimer
@@ -3798,6 +3804,7 @@ ro.ieval.fonbot
 ro.ioanm.fissh
 ro.radioromaniaactualitati.podcasts
 ro.ui.pttdroid
+rocks.mucke
 rocks.poopjournal.flashy
 rocks.poopjournal.morse
 rocks.poopjournal.todont

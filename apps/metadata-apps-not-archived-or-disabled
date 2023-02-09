@@ -1288,6 +1288,7 @@ com.nikola.jakshic.dagger
 com.nilhcem.frcndict
 com.nilhcem.hostseditor
 com.nima.demomusix
+com.nima.mymood
 com.nima.taskmanager
 com.nima.wikianime
 com.niparasc.papanikolis
@@ -2609,6 +2610,7 @@ io.githubfede0d.planetrider
 io.gitlab.allenb1.todolist
 io.gitlab.cryptographic_id
 io.gitlab.danielrparks.vibrato
+io.gitlab.listentogether
 io.gitlab.mudassir.youtubecacher
 io.gresse.hugo.anecdote
 io.heckel.ntfy
@@ -2816,6 +2818,7 @@ me.shrimadhavuk.numselapp
 me.shrimadhavuk.watransmitter
 me.tagavari.airmessage
 me.thanel.dank
+me.timschneeberger.rootlessjamesdsp
 me.tripsit.tripmobile
 me.tsukanov.counter
 me.wenxinwang.pulsedroidrtp
@@ -3301,6 +3304,9 @@ org.gittner.osmbugs
 org.glpi.inventory.agent
 org.glucosio.android
 org.gmote.client.android
+org.gnu.emacs
+org.godotengine.editor.v3
+org.godotengine.editor.v4
 org.grapentin.apps.exceer
 org.greatfire.wikiunblocked.fdroid
 org.gringene.colourclock
@@ -3396,6 +3402,7 @@ org.ligi.etheremote
 org.ligi.fast
 org.ligi.faster
 org.ligi.gobandroid_hd
+org.ligi.gobandroidhd.ai.gnugo
 org.ligi.ipfsdroid
 org.ligi.materialteatimer
 org.ligi.passandroid
@@ -3589,6 +3596,7 @@ org.scoutant.rpn
 org.scummvm.scummvm
 org.seamapdroid
 org.secuso.privacyfriendly2048
+org.secuso.privacyfriendlyactivitytracker
 org.secuso.privacyfriendlybackup
 org.secuso.privacyfriendlyboardgameclock
 org.secuso.privacyfriendlycircuittraining
@@ -3959,6 +3967,7 @@ tk.elevenk.dailybread
 tk.giesecke.disaster_radio
 tk.giesecke.painlessmesh
 tk.giesecke.phoenix
+tk.hack5.treblecheck
 tk.jordynsmediagroup.simpleirc.fdroid
 tk.superl2.xwifi
 tkj.android.homecontrol.mythmote
@@ -4028,6 +4037,7 @@ vnd.blueararat.kaleidoscope6
 vocabletrainer.heinecke.aron.vocabletrainer
 wangdaye.com.geometricweather
 wb.receiptspro
+website.leifs.delta.foss
 wiseguys.radar
 ws.xsoh.etar
 wsdfhjxc.taponium
