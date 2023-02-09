@@ -9,6 +9,8 @@ miscellaneous scripts to analyse f-droid app data
 
 ![rb](graphs/rb.png)
 
+&rarr; [Overview of apps published with Reproducible Builds](reproducible/overview.md)
+
 ## Setup
 
 ```sh
