@@ -3,7 +3,7 @@ Verification builds: https://f-droid.org/docs/Verification_Server/
 Scripts and data: https://github.com/obfusk/fdroid-misc-scripts  
 Last updated: 2023-02-01
 
-![rb](/uploads/abecbb57f0eeb21b4d5496ba6aeeb394/rb.png)
+![rb](../graphs/rb.png)
 
 ### Signatures in metadata: publishing both (upstream) developer-signed and F-Droid-signed APKs
 
@@ -141,6 +141,6 @@ Total number of apps using RB: 6 + 54 = 60.
 
 ### More graphs
 
-![adds](/uploads/6ba8a7a4d384a8902f3de46c09e637a6/adds.png)
-![sigs](/uploads/8c2da216ec717f261af3a3462a1e26b2/sigs.png)
-![bins](/uploads/3b8941d624844381762d008510281134/bins.png)
+![adds](../graphs/adds.png)
+![sigs](../graphs/sigs.png)
+![bins](../graphs/bins.png)
