@@ -51,6 +51,23 @@ def read_adds_data(dates: List[str]) -> Any:
     return np.transpose(data)
 
 
+def read_rems_data(dates: List[str]) -> Any:
+    data = []
+    for d in dates:
+        with open(f"stats/{d}-rems") as fh:
+            new_total = set(line.rstrip() for line in fh)
+        with open(f"reproducible/{d}-bins-rems") as fh:
+            new_repro = set(line.split()[0] for line in fh)
+        with open(f"reproducible/{d}-sigs-rems") as fh:
+            new_repro |= set(line.split()[0] for line in fh)
+        if not new_repro.issubset(new_total):
+            print(f"WARNING: new_repro apps not in new_total on {d}:")
+            for appid in sorted(new_repro - new_total):
+                print(f"  {appid}")
+        data.append([len(new_repro), len(new_total - new_repro)])
+    return np.transpose(data)
+
+
 def plot_rb_data(title: str, dates: List[str], data: Any) -> None:
     labels = ["reproducible", "disabled", "missing"]
     colors = ["green", "red", "orange"]
@@ -62,7 +79,7 @@ def plot_rb_data(title: str, dates: List[str], data: Any) -> None:
     ax.set_ylabel("Number of apps")
 
 
-def plot_adds_data(title: str, dates: List[str], data: Any) -> None:
+def plot_adds_rems_data(title: str, dates: List[str], data: Any, what: str) -> None:
     labels = ["reproducible", "other"]
     colors = ["green", "blue"]
     _, ax = plt.subplots()
@@ -70,7 +87,7 @@ def plot_adds_data(title: str, dates: List[str], data: Any) -> None:
     ax.legend(loc="upper left")
     ax.set_title(title)
     ax.set_xlabel("Date")
-    ax.set_ylabel("Number of new apps")
+    ax.set_ylabel(f"Number of {what} apps")
 
 
 def create_graphs() -> None:
@@ -92,8 +109,13 @@ def create_graphs() -> None:
 
     title_adds = "New apps (not 100% accurate)"
     data_adds = read_adds_data(dates[1:])
-    plot_adds_data(title_adds, dates[1:], data_adds)
+    plot_adds_rems_data(title_adds, dates[1:], data_adds, "new")
     plt.savefig("graphs/adds.png")
+
+    title_rems = "Removed apps (not 100% accurate)"
+    data_rems = read_rems_data(dates[1:])
+    plot_adds_rems_data(title_rems, dates[1:], data_rems, "removed")
+    plt.savefig("graphs/rems.png")
 
 
 if __name__ == "__main__":
