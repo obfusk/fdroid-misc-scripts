@@ -144,5 +144,9 @@ Total number of apps using RB: 6 + 54 = 60.
 ### More graphs
 
 ![adds](../graphs/adds.png)
+![rems](../graphs/rems.png)
+
+![apps](../graphs/apps.png)
+
 ![sigs](../graphs/sigs.png)
 ![bins](../graphs/bins.png)
