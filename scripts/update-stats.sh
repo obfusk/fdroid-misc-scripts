@@ -26,6 +26,7 @@ fi
 popd # fdroiddata
 
 pushd stats
+echo "writing $date-apps..."
 for app in "${apps[@]}"; do
   printf '%s\n' "$app"
 done > "$date-apps"
