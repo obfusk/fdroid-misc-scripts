@@ -32,6 +32,16 @@ $ ./scripts/create-graphs.py
 
 NB: scripts must be run in this order, after updating `binaries/`.
 
+## Update verification server data
+
+Manually: pull `f-droid.org-transparency-log`.
+
+```sh
+$ ./scripts/download-verified.py            # FIXME: cached
+$ ./scripts/update-index-apks.sh 2023-01-   # FIXME: yearly
+$ ./scripts/create-graphs.py
+```
+
 ## Optional: check fdroiddata
 
 ```sh

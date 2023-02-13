@@ -17,6 +17,7 @@ miscellaneous scripts to analyse f-droid app data
 $ git clone https://github.com/obfusk/fdroid-misc-scripts.git
 $ cd fdroid-misc-scripts
 $ git clone https://gitlab.com/fdroid/fdroiddata.git
+$ git clone https://gitlab.com/fdroid/f-droid.org-transparency-log.git
 ```
 
 ### Dependencies
@@ -234,4 +235,22 @@ of other types than `APKSignatureSchemeBlock` or `VerityPaddingBlock`.
 $ ./scripts/detect-blocks-fdroiddata.sh
 fdroiddata/metadata/some.app.id/signatures/42/APKSigningBlock: DependencyInfoBlock
 [...]
+```
+
+### Reproducible Builds: Verification Server
+
+#### download-verified.py
+
+FIXME: work in progress.
+
+```sh
+$ ./scripts/download-verified.py
+```
+
+#### update-index-apks.sh
+
+FIXME: work in progress.
+
+```sh
+$ ./scripts/update-index-apks.sh 2023-01-
 ```
