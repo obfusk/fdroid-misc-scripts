@@ -54,6 +54,7 @@ def main() -> None:
                 if from_json:
                     raise e
                 else:
+                    time.sleep(0.1)
                     continue
         with open(app_file) as fh:
             app_data = json.load(fh)
@@ -68,8 +69,9 @@ def main() -> None:
             for entry in rep_data.values():
                 if entry["verified"]:
                     verified += 1
-                else:
-                    unverified += 1
+                    break
+            else:
+                unverified += 1
         data[appid] = dict(verified=verified, unverified=unverified)
     save()
 

@@ -124,7 +124,9 @@ def plot_veri_data(what: str, title: str, x: List[str], data: Any) -> None:
     labels = ["verified", "unverified"]
     colors = ["green", "red"]
     plot_data(what, title, x, data, colors=colors, labels=labels,
-              xlabel=f"Apps (n={len(x)})", ylabel="Verification attempts", xticks=[])
+              xlabel=f"Apps (n={len(x)})",
+              ylabel="APKs for which verification was attempted",
+              xticks=[])
 
 
 def plot_data(what: str, title: str, x: List[str], data: Any, *,
