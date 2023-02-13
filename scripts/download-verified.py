@@ -64,6 +64,8 @@ def main() -> None:
                     continue
         with open(app_file) as fh:
             app_data = json.load(fh)
+        if not app_data["apkReports"]:
+            continue
         for report in app_data["apkReports"]:
             if not report.endswith(".apk.json") or not VALID_APPID.fullmatch(report[:-9]):
                 raise RuntimeError(f"Invalid report: {report!r}")
