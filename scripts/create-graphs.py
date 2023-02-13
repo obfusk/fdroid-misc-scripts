@@ -87,7 +87,7 @@ def read_rems_data(dates: List[str]) -> Any:
 def read_veri_apks_data() -> Tuple[Any, Any]:
     with open("verification/data.json") as fh:
         veri_data = json.load(fh)
-    data = [[v["verified"], v["unverified"]] for v in veri_data.values()]
+    data = [[len(v["verified_apks"]), len(v["unverified_apks"])] for v in veri_data.values()]
     return np.arange(0, len(data)), np.transpose(data)
 
 

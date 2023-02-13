@@ -41,7 +41,6 @@ def main() -> None:
         print(f"[{i+1}/{len(apps)}]")
         if i and i % 100 == 0:
             save()
-        verified = unverified = 0
         verified_apks = set()
         unverified_apks = set()
         if not VALID_APPID.fullmatch(appid):
@@ -79,17 +78,13 @@ def main() -> None:
                 rep_data = json.load(fh)
             for entry in rep_data.values():
                 if entry["verified"]:
-                    verified += 1
                     verified_apks.add(report[:-5])
                     break
             else:
-                unverified += 1
                 unverified_apks.add(report[:-5])
-        data[appid] = dict(
-            verified=verified, unverified=unverified,
-            verified_apks=sorted(verified_apks),
-            unverified_apks=sorted(unverified_apks),
-        )
+        assert not (verified_apks & unverified_apks)
+        data[appid] = dict(verified_apks=sorted(verified_apks),
+                           unverified_apks=sorted(unverified_apks))
     save()
 
 
