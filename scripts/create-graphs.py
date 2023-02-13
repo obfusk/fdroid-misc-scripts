@@ -5,7 +5,7 @@
 import glob
 import os
 
-from typing import Any, List, Optional, Set, TextIO
+from typing import Any, List, Optional, Set, TextIO, Tuple
 
 import matplotlib.pyplot as plt     # type: ignore[import]
 import numpy as np
@@ -83,6 +83,17 @@ def read_rems_data(dates: List[str]) -> Any:
     return np.transpose(data)
 
 
+def read_veri_data() -> Tuple[Any, Any]:
+    data = []
+    for f in sorted(glob.glob("verification/*-verified")):
+        with open(f) as fh:
+            verified = int(fh.read())
+        with open(f.replace("-verified", "-unverified")) as fh:
+            unverified = int(fh.read())
+        data.append([verified, unverified])
+    return np.arange(0, len(data)), np.transpose(data)
+
+
 def _rb_filter_apps(fh: TextIO) -> Set[str]:
     skip = ("disabled", "missing", "no longer RB")
     apps = set()
@@ -99,27 +110,37 @@ def _rb_filter_apps(fh: TextIO) -> Set[str]:
     return apps
 
 
-def plot_rb_data(what: str, title: str, dates: List[str], data: Any) -> None:
+def plot_rb_data(what: str, title: str, x: List[str], data: Any) -> None:
     labels = ["reproducible", "disabled", "missing"]
     colors = ["green", "red", "orange"]
-    plot_data(what, title, dates, data, labels=labels, colors=colors)
+    plot_data(what, title, x, data, colors=colors, labels=labels)
 
 
-def plot_apps_data(what: str, title: str, dates: List[str], data: Any, *,
+def plot_apps_data(what: str, title: str, x: List[str], data: Any, *,
                    ylabel: Optional[str] = None) -> None:
     labels = ["reproducible", "other"]
     colors = ["green", "blue"]
-    plot_data(what, title, dates, data, labels=labels, colors=colors, ylabel=ylabel)
+    plot_data(what, title, x, data, colors=colors, labels=labels, ylabel=ylabel)
 
 
-def plot_data(what: str, title: str, dates: List[str], data: Any, *, labels: List[str],
-              colors: List[str], ylabel: Optional[str] = None) -> None:
+def plot_veri_data(what: str, title: str, x: List[str], data: Any) -> None:
+    labels = ["verified", "unverified"]
+    colors = ["green", "red"]
+    plot_data(what, title, x, data, colors=colors, labels=labels,
+              xlabel="Apps", ylabel="Verification attempts", xticks=[])
+
+
+def plot_data(what: str, title: str, x: List[str], data: Any, *,
+              colors: List[str], labels: List[str], xlabel: Optional[str] = None,
+              ylabel: Optional[str] = None, xticks: Optional[List[Any]] = None) -> None:
     _, ax = plt.subplots()
-    ax.stackplot(dates, np.vstack(data), labels=labels, colors=colors, alpha=0.8)
+    ax.stackplot(x, np.vstack(data), labels=labels, colors=colors, alpha=0.8)
     ax.legend(loc="upper left")
     ax.set_title(title)
-    ax.set_xlabel("Date")
+    ax.set_xlabel(xlabel or "Date")
     ax.set_ylabel(ylabel or "Number of apps")
+    if xticks is not None:
+        ax.set_xticks(xticks)
     print(f"saving graphs/{what}.png...")
     plt.savefig(f"graphs/{what}.png")
 
@@ -149,6 +170,10 @@ def create_graphs() -> None:
     title_rems = "Removed apps (not 100% accurate)"
     data_rems = read_rems_data(dates[1:])
     plot_apps_data("rems", title_rems, dates[1:], data_rems, ylabel="Number of removed apps")
+
+    title_veri = "Verified apps"
+    x_veri, data_veri = read_veri_data()
+    plot_veri_data("veri", title_veri, x_veri, data_veri)
 
 
 if __name__ == "__main__":
