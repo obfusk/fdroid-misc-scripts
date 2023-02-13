@@ -42,6 +42,7 @@ def main() -> None:
         if i and i % 100 == 0:
             save()
         verified = unverified = 0
+        verified_apks = set()
         if not VALID_APPID.fullmatch(appid):
             raise RuntimeError(f"Invalid appid: {appid!r}")
         app_file = f"verification/tmp/{appid}.json"
@@ -69,10 +70,14 @@ def main() -> None:
             for entry in rep_data.values():
                 if entry["verified"]:
                     verified += 1
+                    verified_apks.add(report[:-5])
                     break
             else:
                 unverified += 1
-        data[appid] = dict(verified=verified, unverified=unverified)
+        data[appid] = dict(
+            verified=verified, unverified=unverified,
+            verified_apks=sorted(verified_apks),
+        )
     save()
 
 

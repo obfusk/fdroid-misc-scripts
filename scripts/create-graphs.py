@@ -84,10 +84,30 @@ def read_rems_data(dates: List[str]) -> Any:
     return np.transpose(data)
 
 
-def read_veri_data() -> Tuple[Any, Any]:
+def read_veri_apks_data() -> Tuple[Any, Any]:
     with open("verification/data.json") as fh:
-        json_data = json.load(fh)
-        data = [[v["verified"], v["unverified"]] for v in json_data.values()]
+        veri_data = json.load(fh)
+    data = [[v["verified"], v["unverified"]] for v in veri_data.values()]
+    return np.arange(0, len(data)), np.transpose(data)
+
+
+def read_veri_idx_data() -> Tuple[Any, Any]:
+    data = []
+    apks = {}
+    with open("index-v1.json") as fh:
+        idx_data = json.load(fh)
+    with open("verification/data.json") as fh:
+        veri_data = json.load(fh)
+    for appid, apk_data in sorted(idx_data["packages"].items()):
+        apks[appid] = sorted(set(x["apkName"] for x in apk_data))
+    for appid, app_apks in apks.items():
+        verified = unverified = 0
+        for apk in app_apks:
+            if appid in veri_data and apk in veri_data[appid]["verified_apks"]:
+                verified += 1
+            else:
+                unverified += 1
+        data.append([verified, unverified])
     return np.arange(0, len(data)), np.transpose(data)
 
 
@@ -170,9 +190,13 @@ def create_graphs() -> None:
     data_rems = read_rems_data(dates[1:])
     plot_apps_data("rems", title_rems, dates[1:], data_rems, ylabel="Number of removed apps")
 
-    title_veri = "Verified apps"
-    x_veri, data_veri = read_veri_data()
-    plot_veri_data("veri", title_veri, x_veri, data_veri)
+    title_veri_apks = "APKs verified by the F-Droid Verification Server"
+    x_veri_apks, data_veri_apks = read_veri_apks_data()
+    plot_veri_data("veri_apks", title_veri_apks, x_veri_apks, data_veri_apks)
+
+    title_veri_idx = "Verified APKs in F-Droid index"
+    x_veri_idx, data_veri_idx = read_veri_idx_data()
+    plot_veri_data("veri_idx", title_veri_idx, x_veri_idx, data_veri_idx)
 
 
 if __name__ == "__main__":
