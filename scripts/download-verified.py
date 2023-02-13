@@ -39,10 +39,11 @@ def main() -> None:
     data = {}
     for i, (appid, from_json) in enumerate(sorted(apps.items())):
         print(f"[{i+1}/{len(apps)}]")
-        if i and i % 100 == 0:
-            save()
+        # if i and i % 100 == 0:
+        #     save()
         verified_apks = set()
         unverified_apks = set()
+        verified_since = {}
         if not VALID_APPID.fullmatch(appid):
             raise RuntimeError(f"Invalid appid: {appid!r}")
         app_file = f"verification/tmp/{appid}.json"
@@ -76,15 +77,20 @@ def main() -> None:
                 continue
             with open(rep_file) as fh:
                 rep_data = json.load(fh)
-            for entry in rep_data.values():
-                if entry["verified"]:
-                    verified_apks.add(report[:-5])
+            assert rep_data
+            apk = report[:-5]
+            for ts, entry in sorted(rep_data.items(), reverse=True):
+                if not entry["verified"]:
                     break
-            else:
-                unverified_apks.add(report[:-5])
-        assert not (verified_apks & unverified_apks)
-        data[appid] = dict(verified_apks=sorted(verified_apks),
-                           unverified_apks=sorted(unverified_apks))
+                verified_apks.add(apk)
+                verified_since[apk] = time.strftime("%F", time.gmtime(float(ts)))
+            if apk not in verified_apks:
+                unverified_apks.add(apk)
+        data[appid] = dict(
+            verified_apks=sorted(verified_apks),
+            unverified_apks=sorted(unverified_apks),
+            verified_since=verified_since,
+        )
     save()
 
 

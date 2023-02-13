@@ -116,6 +116,33 @@ def read_veri_idx_data() -> Tuple[Any, Any]:
     return np.arange(0, len(data)), np.transpose(data)
 
 
+def read_veri_idx_t_data(dates: List[str]) -> Any:
+    data = []
+    with open("verification/data.json") as fh:
+        veri_data = json.load(fh)
+    for d in dates:
+        verified = verified_later = unverified = untested = 0
+        with open(f"verification/index-apks-{d}.json") as fh:
+            idx_data = json.load(fh)
+        for appid, app_apks in idx_data.items():
+            for apk in app_apks:
+                if appid in veri_data:
+                    vs = veri_data[appid]["verified_since"]
+                    if apk in vs:
+                        if d >= vs[apk]:
+                            verified += 1
+                        else:
+                            verified_later += 1
+                    elif apk in veri_data[appid]["unverified_apks"]:
+                        unverified += 1
+                    else:
+                        untested += 1
+                else:
+                    untested += 1
+        data.append([verified, verified_later, unverified, untested])
+    return np.transpose(data)
+
+
 def _rb_filter_apps(fh: TextIO) -> Set[str]:
     skip = ("disabled", "missing", "no longer RB")
     apps = set()
@@ -154,6 +181,13 @@ def plot_veri_data(what: str, title: str, x: List[str], data: Any, *,
         colors.append("orange")
     plot_data(what, title, x, data, figsize=(12.8, 4.8), colors=colors,
               labels=labels, xlabel=f"Apps (n={len(x)})", ylabel=ylabel, xticks=[])
+
+
+def plot_veri_t_data(what: str, title: str, x: List[str], data: Any, *,
+                     ylabel: Optional[str] = None) -> None:
+    labels = ["verified at the time", "verified later", "unverified", "untested"]
+    colors = ["green", "lime", "red", "orange"]
+    plot_data(what, title, x, data, colors=colors, labels=labels, ylabel=ylabel)
 
 
 def plot_data(what: str, title: str, x: List[str], data: Any, *,
@@ -207,6 +241,14 @@ def create_graphs() -> None:
     x_veri_idx, data_veri_idx = read_veri_idx_data()
     plot_veri_data("veri_idx", title_veri_idx, x_veri_idx, data_veri_idx,
                    ylabel="APKs in index")
+
+    idx_dates = [os.path.basename(f)[11:-5] for f in
+                 sorted(glob.glob("verification/index-apks-*.json"))]
+
+    title_veri_idx_t = "Verified APKs in F-Droid index over time (not 100% accurate)"
+    data_veri_idx_t = read_veri_idx_t_data(idx_dates)
+    plot_veri_t_data("veri_idx_t", title_veri_idx_t, idx_dates, data_veri_idx_t,
+                     ylabel="APKs in index")
 
 
 if __name__ == "__main__":
