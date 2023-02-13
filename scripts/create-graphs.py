@@ -124,15 +124,15 @@ def plot_veri_data(what: str, title: str, x: List[str], data: Any) -> None:
     labels = ["verified", "unverified"]
     colors = ["green", "red"]
     plot_data(what, title, x, data, colors=colors, labels=labels,
-              xlabel=f"Apps (n={len(x)})",
-              ylabel="APKs for which verification was attempted",
-              xticks=[])
+              figsize=(12.8, 4.8), xticks=[], xlabel=f"Apps (n={len(x)})",
+              ylabel="APKs for which verification was attempted")
 
 
 def plot_data(what: str, title: str, x: List[str], data: Any, *,
+              figsize: Tuple[float, float] = (6.4, 4.8),
               colors: List[str], labels: List[str], xlabel: Optional[str] = None,
               ylabel: Optional[str] = None, xticks: Optional[List[Any]] = None) -> None:
-    _, ax = plt.subplots()
+    _, ax = plt.subplots(figsize=figsize)
     ax.stackplot(x, np.vstack(data), labels=labels, colors=colors, alpha=0.8)
     ax.legend(loc="upper left")
     ax.set_title(title)
