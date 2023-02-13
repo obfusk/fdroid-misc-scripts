@@ -19,6 +19,11 @@ def download(output: str, url: str) -> None:
 
 
 def main() -> None:
+    def save() -> None:
+        print("saving verification/data.json...")
+        with open("verification/data.json", "w") as fh:
+            json.dump(data, fh, indent=2, sort_keys=True)
+            fh.write("\n")
     os.makedirs("verification/tmp", exist_ok=True)
     veri_file = "verification/tmp/verified.json"
     if not os.path.exists(veri_file):
@@ -31,8 +36,11 @@ def main() -> None:
             appid = line.strip()
             if appid not in apps:
                 apps[appid] = False
+    data = {}
     for i, (appid, from_json) in enumerate(sorted(apps.items())):
         print(f"[{i+1}/{len(apps)}]")
+        if i and i % 100 == 0:
+            save()
         verified = unverified = 0
         if not VALID_APPID.fullmatch(appid):
             raise RuntimeError(f"Invalid appid: {appid!r}")
@@ -62,10 +70,8 @@ def main() -> None:
                     verified += 1
                 else:
                     unverified += 1
-        with open(f"verification/{appid}-verified", "w") as fh:
-            fh.write(f"{verified}\n")
-        with open(f"verification/{appid}-unverified", "w") as fh:
-            fh.write(f"{unverified}\n")
+        data[appid] = dict(verified=verified, unverified=unverified)
+    save()
 
 
 if __name__ == "__main__":

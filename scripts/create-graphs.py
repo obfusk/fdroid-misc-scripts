@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 import glob
+import json
 import os
 
 from typing import Any, List, Optional, Set, TextIO, Tuple
@@ -84,13 +85,9 @@ def read_rems_data(dates: List[str]) -> Any:
 
 
 def read_veri_data() -> Tuple[Any, Any]:
-    data = []
-    for f in sorted(glob.glob("verification/*-verified")):
-        with open(f) as fh:
-            verified = int(fh.read())
-        with open(f.replace("-verified", "-unverified")) as fh:
-            unverified = int(fh.read())
-        data.append([verified, unverified])
+    with open("verification/data.json") as fh:
+        json_data = json.load(fh)
+        data = [[v["verified"], v["unverified"]] for v in json_data.values()]
     return np.arange(0, len(data)), np.transpose(data)
 
 
@@ -127,7 +124,7 @@ def plot_veri_data(what: str, title: str, x: List[str], data: Any) -> None:
     labels = ["verified", "unverified"]
     colors = ["green", "red"]
     plot_data(what, title, x, data, colors=colors, labels=labels,
-              xlabel="Apps", ylabel="Verification attempts", xticks=[])
+              xlabel=f"Apps (n={len(x)})", ylabel="Verification attempts", xticks=[])
 
 
 def plot_data(what: str, title: str, x: List[str], data: Any, *,
