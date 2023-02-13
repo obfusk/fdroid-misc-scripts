@@ -65,6 +65,9 @@ def main() -> None:
             rep_file = f"verification/tmp/{report}"
             if not os.path.exists(rep_file):
                 download(rep_file, URL.format(report))
+            if not os.path.getsize(rep_file):
+                print(f"WARNING: empty file: {rep_file!r}")
+                continue
             with open(rep_file) as fh:
                 rep_data = json.load(fh)
             for entry in rep_data.values():
