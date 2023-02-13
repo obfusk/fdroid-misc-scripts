@@ -15,7 +15,7 @@ VALID_APPID = re.compile(r"([a-zA-Z0-9_]+)(\.[a-zA-Z0-9_]+)*")
 def download(output: str, url: str) -> None:
     args = ("wget", "-O", output, "--", url)
     subprocess.run(args, check=True)
-    time.sleep(1)
+    time.sleep(0.1)
 
 
 def main() -> None:
@@ -43,6 +43,7 @@ def main() -> None:
             save()
         verified = unverified = 0
         verified_apks = set()
+        unverified_apks = set()
         if not VALID_APPID.fullmatch(appid):
             raise RuntimeError(f"Invalid appid: {appid!r}")
         app_file = f"verification/tmp/{appid}.json"
@@ -55,6 +56,10 @@ def main() -> None:
                 if from_json:
                     raise e
                 else:
+                    with open(app_file, "w") as fh:
+                        json.dump({"404": True, "apkReports": []}, fh,
+                                  indent=2, sort_keys=True)
+                        fh.write("\n")
                     time.sleep(0.1)
                     continue
         with open(app_file) as fh:
@@ -77,9 +82,11 @@ def main() -> None:
                     break
             else:
                 unverified += 1
+                unverified_apks.add(report[:-5])
         data[appid] = dict(
             verified=verified, unverified=unverified,
             verified_apks=sorted(verified_apks),
+            unverified_apks=sorted(unverified_apks),
         )
     save()
 

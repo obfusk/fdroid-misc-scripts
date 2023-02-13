@@ -101,13 +101,18 @@ def read_veri_idx_data() -> Tuple[Any, Any]:
     for appid, apk_data in sorted(idx_data["packages"].items()):
         apks[appid] = sorted(set(x["apkName"] for x in apk_data))
     for appid, app_apks in apks.items():
-        verified = unverified = 0
+        verified = unverified = untested = 0
         for apk in app_apks:
-            if appid in veri_data and apk in veri_data[appid]["verified_apks"]:
-                verified += 1
+            if appid in veri_data:
+                if apk in veri_data[appid]["verified_apks"]:
+                    verified += 1
+                elif apk in veri_data[appid]["unverified_apks"]:
+                    unverified += 1
+                else:
+                    untested += 1
             else:
-                unverified += 1
-        data.append([verified, unverified])
+                untested += 1
+        data.append([verified, unverified, untested])
     return np.arange(0, len(data)), np.transpose(data)
 
 
@@ -140,12 +145,15 @@ def plot_apps_data(what: str, title: str, x: List[str], data: Any, *,
     plot_data(what, title, x, data, colors=colors, labels=labels, ylabel=ylabel)
 
 
-def plot_veri_data(what: str, title: str, x: List[str], data: Any) -> None:
+def plot_veri_data(what: str, title: str, x: List[str], data: Any, *,
+                   ylabel: Optional[str] = None) -> None:
     labels = ["verified", "unverified"]
     colors = ["green", "red"]
-    plot_data(what, title, x, data, colors=colors, labels=labels,
-              figsize=(12.8, 4.8), xticks=[], xlabel=f"Apps (n={len(x)})",
-              ylabel="APKs for which verification was attempted")
+    if len(data) > 2:
+        labels.append("untested")
+        colors.append("orange")
+    plot_data(what, title, x, data, figsize=(12.8, 4.8), colors=colors,
+              labels=labels, xlabel=f"Apps (n={len(x)})", ylabel=ylabel, xticks=[])
 
 
 def plot_data(what: str, title: str, x: List[str], data: Any, *,
@@ -192,11 +200,13 @@ def create_graphs() -> None:
 
     title_veri_apks = "APKs verified by the F-Droid Verification Server"
     x_veri_apks, data_veri_apks = read_veri_apks_data()
-    plot_veri_data("veri_apks", title_veri_apks, x_veri_apks, data_veri_apks)
+    plot_veri_data("veri_apks", title_veri_apks, x_veri_apks, data_veri_apks,
+                   ylabel="APKs for which verification was attempted")
 
     title_veri_idx = "Verified APKs in F-Droid index"
     x_veri_idx, data_veri_idx = read_veri_idx_data()
-    plot_veri_data("veri_idx", title_veri_idx, x_veri_idx, data_veri_idx)
+    plot_veri_data("veri_idx", title_veri_idx, x_veri_idx, data_veri_idx,
+                   ylabel="APKs in index")
 
 
 if __name__ == "__main__":
