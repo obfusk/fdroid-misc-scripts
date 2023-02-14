@@ -11,6 +11,8 @@ miscellaneous scripts to analyse f-droid app data
 
 &rarr; [Overview of apps published with Reproducible Builds](reproducible/overview.md)
 
+&rarr; [Graphs of apps verified by the Verification Server](verification/graphs.md)
+
 ## Setup
 
 ```sh
