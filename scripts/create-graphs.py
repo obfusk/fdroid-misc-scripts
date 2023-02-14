@@ -87,7 +87,8 @@ def read_rems_data(dates: List[str]) -> Any:
 def read_veri_apks_data() -> Tuple[Any, Any]:
     with open("verification/data.json") as fh:
         veri_data = json.load(fh)
-    data = [[len(v["verified_apks"]), len(v["unverified_apks"])] for v in veri_data.values()]
+    data = [_abs_to_pct([len(v["verified_apks"]), len(v["unverified_apks"])])
+            for v in veri_data.values()]
     return np.arange(0, len(data)), np.transpose(data)
 
 
@@ -112,7 +113,7 @@ def read_veri_idx_data() -> Tuple[Any, Any]:
                     untested += 1
             else:
                 untested += 1
-        data.append([verified, unverified, untested])
+        data.append(_abs_to_pct([verified, unverified, untested]))
     return np.arange(0, len(data)), np.transpose(data)
 
 
@@ -157,6 +158,11 @@ def _rb_filter_apps(fh: TextIO) -> Set[str]:
         if not any(t in tags for t in skip):
             apps.add(appid)
     return apps
+
+
+def _abs_to_pct(values: List[int]) -> List[int]:
+    tot = sum(values)
+    return [round(100 * x / tot) for x in values]
 
 
 def plot_rb_data(what: str, title: str, x: List[str], data: Any) -> None:
@@ -232,23 +238,23 @@ def create_graphs() -> None:
     data_rems = read_rems_data(dates[1:])
     plot_apps_data("rems", title_rems, dates[1:], data_rems, ylabel="Number of removed apps")
 
-    title_veri_apks = "APKs verified by the F-Droid Verification Server"
+    title_veri_apks = "APKs verified by the Verification Server"
     x_veri_apks, data_veri_apks = read_veri_apks_data()
     plot_veri_data("veri_apks", title_veri_apks, x_veri_apks, data_veri_apks,
-                   ylabel="APKs for which verification was attempted")
+                   ylabel="% of tested APKs")
 
-    title_veri_idx = "Verified APKs in F-Droid index"
+    title_veri_idx = "Verified APKs in the index"
     x_veri_idx, data_veri_idx = read_veri_idx_data()
     plot_veri_data("veri_idx", title_veri_idx, x_veri_idx, data_veri_idx,
-                   ylabel="APKs in index")
+                   ylabel="% of APKs in the index")
 
     idx_dates = [os.path.basename(f)[11:-5] for f in
                  sorted(glob.glob("verification/index-apks-*.json"))]
 
-    title_veri_idx_t = "Verified APKs in F-Droid index over time (not 100% accurate)"
+    title_veri_idx_t = "Verified APKs in the index over time (not 100% accurate)"
     data_veri_idx_t = read_veri_idx_t_data(idx_dates)
     plot_veri_t_data("veri_idx_t", title_veri_idx_t, idx_dates, data_veri_idx_t,
-                     ylabel="APKs in index")
+                     ylabel="Number of APKs in the index")
 
 
 if __name__ == "__main__":
