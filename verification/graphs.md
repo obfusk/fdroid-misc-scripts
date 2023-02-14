@@ -1,4 +1,4 @@
-# Graphs of apps verified by the Verification Server
+# Graphs of F-Droid apps verified by the Verification Server
 
 Publishing apps with Reproducible Builds: https://f-droid.org/docs/Reproducible_Builds/  
 Verification builds: https://f-droid.org/docs/Verification_Server/  
