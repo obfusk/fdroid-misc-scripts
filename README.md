@@ -72,6 +72,16 @@ some.other.app.id                                             all builds disable
 [...]
 ```
 
+#### detect-permissions.py
+
+Lists apps in the index that use the specified permission(s).
+
+```sh
+$ ./scripts/detect-permissions.py REQUEST_INSTALL_PACKAGES
+some.app.id: android.permission.REQUEST_INSTALL_PACKAGES
+[...]
+```
+
 #### update-stats.sh
 
 Update `stats/YYYY-MM-DD-apps`.

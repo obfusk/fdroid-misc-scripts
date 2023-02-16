@@ -61,6 +61,13 @@ $ ../scripts/detect-blocks.sh
 ## Optional: detect signflinger/virtual entry
 
 ```sh
+$ cd binaries
 $ ../scripts/detect-signflinger.sh
 $ ../scripts/detect-virtual-entry.sh
+```
+
+## Optional: detect permissions
+
+```sh
+$ ./scripts/detect-permissions.py REQUEST_INSTALL_PACKAGES
 ```
