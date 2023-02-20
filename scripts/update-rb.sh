@@ -46,8 +46,8 @@ else
 fi
 echo "date=$date"
 echo 'listing Binaries...'
-binaries="$( grep -l ^Binaries: metadata/*.yml | sort \
-               | sed -r 's!^metadata/!!; s!\.yml$!!' )"
+binaries="$( grep -lE '^Binaries|^    binary: http' metadata/*.yml \
+               | sort | sed -r 's!^metadata/!!; s!\.yml$!!' )"
 echo 'listing signatures...'
 signatures="$( ls -d metadata/*/signatures | sort \
                  | sed -r 's!^metadata/!!; s!/signatures$!!')"

@@ -4,18 +4,21 @@
 set -e
 export LC_ALL=C.UTF-8
 mkdir -p binaries
-for yml in $( grep -l ^Binaries: fdroiddata/metadata/*.yml | sort ); do
+for yml in $( grep -lE '^Binaries|^    binary: http' \
+                fdroiddata/metadata/*.yml | sort ); do
   echo "==> $yml"
   base="$( basename "$yml" .yml )"
   read -r version code upstream_url < <( python3 -c '
 import sys, yaml
 with open(sys.argv[1]) as fh:
     m = yaml.safe_load(fh.read())
+bins = m.get("Binaries")
 for b in reversed(m["Builds"]):
     if not "disable" in b:
         v = b["versionName"]
         c = b["versionCode"]
-        print(v, c, m["Binaries"].replace("%v", v).replace("%c", str(c)))
+        bin = b.get("binary", bins)
+        print(v, c, bin.replace("%v", v).replace("%c", str(c)))
         break
 else:
     print()
