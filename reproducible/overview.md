@@ -3,13 +3,13 @@
 Publishing apps with Reproducible Builds: https://f-droid.org/docs/Reproducible_Builds/  
 Verification builds: https://f-droid.org/docs/Verification_Server/  
 Scripts and data: https://github.com/obfusk/fdroid-misc-scripts  
-Last updated: 2023-02-01
+Last updated: 2023-03-04
 
 ![rb](../graphs/rb.png)
 
 ### Signatures in metadata: publishing both (upstream) developer-signed and F-Droid-signed APKs
 
-#### {2022-{11,12},2023-{01,02}}-01: 6 apps
+#### {2022-{11,12},2023-{01,02,03}}-01: 6 apps
 
 All apps (includes 1 no longer RB, making 7):
 
@@ -135,9 +135,43 @@ yetzio.yetcalc [signflinger]
 
 Signed with [`signflinger`](https://github.com/obfusk/apksigcopier#what-about-apks-signed-by-gradlezipflingersignflinger-instead-of-apksigner): 23 apps.
 
+#### 2023-03-01: 75 apps (+ 21)
+
+Newly added (none were removed):
+
+<details>
+
+```
+com.akshayaap.touchdroid [signflinger]
+com.cyb3rko.pincredible [signflinger]
+com.github.vatbub.scoreboard [signflinger]
+com.lijukay.quotesAltDesign
+com.nima.guessthatpokemon [signflinger]
+com.nima.mymood [signflinger]
+com.zhenxiang.superimage
+de.chadenas.cpudefense [signflinger]
+de.westnordost.streetcomplete.expert [signflinger]
+dev.datlag.burningseries
+eu.darken.capod
+eu.zimbelstern.tournant
+gq.kirmanak.mealient
+in.sunilpaulmathew.ashell
+org.dianqk.ruslin
+org.fcitx.fcitx5.android
+ru.tech.imageresizershrinker
+tk.hack5.treblecheck [signflinger]
+ua.com.radiokot.lnaddr2invoice [signflinger]
+ua.syt0r.kanji.fdroid
+website.leifs.delta.foss
+```
+
+</details>
+
+Signed with [`signflinger`](https://github.com/obfusk/apksigcopier#what-about-apks-signed-by-gradlezipflingersignflinger-instead-of-apksigner): 32 apps.
+
 ---
 
-Total number of apps using RB: 6 + 54 = 60.
+Total number of apps using RB: 6 + 75 = 81.
 
 ---
 
