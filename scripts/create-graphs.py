@@ -71,16 +71,16 @@ def read_rems_data(dates: List[str]) -> Any:
     data = []
     for d in dates:
         with open(f"stats/{d}-rems") as fh:
-            new_total = set(line.rstrip() for line in fh)
+            del_total = set(line.rstrip() for line in fh)
         with open(f"reproducible/{d}-bins-rems") as fh:
-            new_repro = _rb_filter_apps(fh)
+            del_repro = _rb_filter_apps(fh)
         with open(f"reproducible/{d}-sigs-rems") as fh:
-            new_repro |= _rb_filter_apps(fh)
-        if not new_repro.issubset(new_total):
-            print(f"WARNING: new_repro apps not in new_total on {d}:")
-            for appid in sorted(new_repro - new_total):
+            del_repro |= _rb_filter_apps(fh)
+        if not del_repro.issubset(del_total):
+            print(f"WARNING: del_repro apps not in del_total on {d}:")
+            for appid in sorted(del_repro - del_total):
                 print(f"  {appid}")
-        data.append([len(new_repro), len(new_total - new_repro)])
+        data.append([len(del_repro), len(del_total - del_repro)])
     return np.transpose(data)
 
 
@@ -197,10 +197,12 @@ def plot_veri_t_data(what: str, title: str, x: List[str], data: Any, *,
 
 
 def plot_data(what: str, title: str, x: List[str], data: Any, *,
-              figsize: Tuple[float, float] = (6.4, 4.8),
+              figsize: Tuple[float, float] = (12.8, 4.8),
               colors: List[str], labels: List[str], xlabel: Optional[str] = None,
               ylabel: Optional[str] = None, xticks: Optional[List[Any]] = None) -> None:
-    _, ax = plt.subplots(figsize=figsize)
+    fig, ax = plt.subplots(figsize=figsize)
+    fig.patch.set_facecolor("#bbbbbb")
+    ax.patch.set_facecolor("#bbbbbb")
     ax.stackplot(x, np.vstack(data), labels=labels, colors=colors, alpha=0.8)
     ax.legend(loc="upper left")
     ax.set_title(title)
