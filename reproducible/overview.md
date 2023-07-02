@@ -8,7 +8,7 @@ Last updated: 2023-07-02
 ![rb](../graphs/rb.png)
 
 Description: graph "Apps published with Reproducible Builds (all)",
-showing an almost straight line from 20 apps on 2022-11-01 to 144 apps
+showing an almost straight line from 20 apps on 2022-11-01 to 145 apps
 on 2023-07-01.
 
 ### Signatures in metadata: publishing both (upstream) developer-signed and F-Droid-signed APKs
@@ -177,7 +177,7 @@ Newly added (none were removed):
 
 Signed with [`signflinger`](https://github.com/obfusk/apksigcopier#what-about-apks-signed-by-gradlezipflingersignflinger-instead-of-apksigner): 32 apps.
 
-#### 2023-04-01: 86 apps (+ 11)
+#### 2023-04-01: 87 apps (+ 12)
 
 Newly added (none were removed):
 
@@ -197,7 +197,15 @@ Newly added (none were removed):
 
 </details>
 
-#### 2023-05-01: 103 apps (+ 17)
+No longer disabled:
+
+<details>
+
+* [`org.jellyfin.androidtv`](https://f-droid.org/packages/org.jellyfin.androidtv)
+
+</details>
+
+#### 2023-05-01: 104 apps (+ 17)
 
 Newly added (none were removed):
 
@@ -230,7 +238,7 @@ Switched to RB:
 
 </details>
 
-#### 2023-06-01: 116 apps (+ 14, - 1)
+#### 2023-06-01: 117 apps (+ 14, - 1)
 
 Newly added:
 
@@ -261,7 +269,7 @@ Switched away from RB:
 
 </details>
 
-#### 2023-07-01: 137 apps (+ 21)
+#### 2023-07-01: 138 apps (+ 21)
 
 Newly added (none were removed):
 
@@ -293,7 +301,7 @@ Newly added (none were removed):
 
 ---
 
-Total number of apps using RB: 7 + 137 = 144.
+Total number of apps using RB: 7 + 138 = 145.
 
 ---
 

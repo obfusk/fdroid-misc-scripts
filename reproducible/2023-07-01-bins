@@ -116,7 +116,7 @@ org.dianqk.ruslin
 org.fcitx.fcitx5.android.plugin.anthy
 org.fcitx.fcitx5.android
 org.greatfire.wikiunblocked.fdroid
-org.jellyfin.androidtv [disabled]
+org.jellyfin.androidtv
 org.jellyfin.mobile
 org.jshobbysoft.cameraalign
 org.localsend.localsend_app [signflinger]

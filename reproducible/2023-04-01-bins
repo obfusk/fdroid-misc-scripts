@@ -70,7 +70,7 @@ org.briarproject.briar.android
 org.dianqk.ruslin
 org.fcitx.fcitx5.android
 org.greatfire.wikiunblocked.fdroid
-org.jellyfin.androidtv [disabled]
+org.jellyfin.androidtv
 org.jellyfin.mobile
 org.joinmastodon.android [signflinger]
 org.localsend.localsend_app [signflinger]
