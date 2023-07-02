@@ -207,7 +207,6 @@ Newly added (none were removed):
 * [`com.hexbit.rutmath`](https://f-droid.org/packages/com.hexbit.rutmath) [signflinger]
 * [`com.kaajjo.libresudoku`](https://f-droid.org/packages/com.kaajjo.libresudoku)
 * [`com.thatsmanmeet.taskyapp`](https://f-droid.org/packages/com.thatsmanmeet.taskyapp)
-* [`com.wireguard.android`](https://f-droid.org/packages/com.wireguard.android)
 * [`de.foodsharing.app`](https://f-droid.org/packages/de.foodsharing.app) [signflinger]
 * [`development.parkenulm`](https://f-droid.org/packages/development.parkenulm)
 * [`io.github.deweyreed.timer.other`](https://f-droid.org/packages/io.github.deweyreed.timer.other) [signflinger]
@@ -217,9 +216,17 @@ Newly added (none were removed):
 * [`nl.privacydragon.bookwyrm`](https://f-droid.org/packages/nl.privacydragon.bookwyrm) [signflinger]
 * [`org.cryptomator.lite`](https://f-droid.org/packages/org.cryptomator.lite)
 * [`org.jshobbysoft.cameraalign`](https://f-droid.org/packages/org.jshobbysoft.cameraalign)
-* [`timur.webcall.callee`](https://f-droid.org/packages/timur.webcall.callee) [signflinger]
 * [`ua.com.radiokot.photoprism`](https://f-droid.org/packages/ua.com.radiokot.photoprism) [signflinger]
 * [`xyz.apiote.bimba.czwek`](https://f-droid.org/packages/xyz.apiote.bimba.czwek) [signflinger]
+
+</details>
+
+Switched to RB:
+
+<details>
+
+* [`com.wireguard.android`](https://f-droid.org/packages/com.wireguard.android)
+* [`timur.webcall.callee`](https://f-droid.org/packages/timur.webcall.callee) [signflinger]
 
 </details>
 
@@ -246,7 +253,7 @@ Newly added:
 
 </details>
 
-No longer RB:
+Switched away from RB:
 
 <details>
 
