@@ -9,7 +9,7 @@ for line in sys.stdin:
         m = yaml.safe_load(fh.read())
     if "Disabled" in m:
         msg = "disabled"
-    elif "ArchivePolicy" in m and m["ArchivePolicy"].startswith("0"):
+    elif "ArchivePolicy" in m and m["ArchivePolicy"] == 0:
         msg = "archived"
     else:
         for b in reversed(m["Builds"]):
