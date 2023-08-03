@@ -32,6 +32,11 @@ $ ./scripts/create-graphs.py
 
 NB: scripts must be run in this order, after updating `binaries/`.
 
+```sh
+$ sed -r 's#^(\S+)#* [`\1`](https://f-droid.org/packages/\1)#' < reproducible/$FIRSTOFTHISMONTH-bins-adds
+$ vim reproducible/overview.md
+```
+
 ## Update verification server data
 
 Manually: pull `f-droid.org-transparency-log`.
