@@ -3,13 +3,13 @@
 Publishing apps with Reproducible Builds: https://f-droid.org/docs/Reproducible_Builds/  
 Verification builds: https://f-droid.org/docs/Verification_Server/  
 Scripts and data: https://github.com/obfusk/fdroid-misc-scripts  
-Last updated: 2023-07-02
+Last updated: 2023-08-03
 
 ![rb](../graphs/rb.png)
 
 Description: graph "Apps published with Reproducible Builds (all)",
-showing an almost straight line from 20 apps on 2022-11-01 to 145 apps
-on 2023-07-01.
+showing an almost straight line from 20 apps on 2022-11-01 to 165 apps
+on 2023-08-01.
 
 ### Signatures in metadata: publishing both (upstream) developer-signed and F-Droid-signed APKs
 
@@ -29,7 +29,7 @@ All apps (includes 1 no longer RB, making 7):
 
 </details>
 
-#### 2023-{05,06,07}-01: 7 apps
+#### 2023-{05,06,07,08}-01: 7 apps
 
 All apps (NewPipe is RB again, making 7):
 
@@ -299,9 +299,38 @@ Newly added (none were removed):
 
 </details>
 
+#### 2023-08-01: 158 apps (+ 20)
+
+Newly added (none were removed):
+
+<details>
+
+* [`biz.binarysolutions.weatherusa`](https://f-droid.org/packages/biz.binarysolutions.weatherusa) [signflinger]
+* [`bored.codebyk.mintcalc`](https://f-droid.org/packages/bored.codebyk.mintcalc) [signflinger]
+* [`com.bnyro.clock`](https://f-droid.org/packages/com.bnyro.clock) [signflinger]
+* [`com.bnyro.contacts`](https://f-droid.org/packages/com.bnyro.contacts) [signflinger]
+* [`com.bnyro.recorder`](https://f-droid.org/packages/com.bnyro.recorder) [signflinger]
+* [`com.bnyro.wallpaper`](https://f-droid.org/packages/com.bnyro.wallpaper) [signflinger]
+* [`com.elasticrock.keepscreenon`](https://f-droid.org/packages/com.elasticrock.keepscreenon)
+* [`com.etb.filemanager`](https://f-droid.org/packages/com.etb.filemanager)
+* [`com.kounex.obsBlade`](https://f-droid.org/packages/com.kounex.obsBlade) [signflinger]
+* [`com.nima.openbooksdownloader`](https://f-droid.org/packages/com.nima.openbooksdownloader) [signflinger]
+* [`com.shifthackz.aisdv1.app.foss`](https://f-droid.org/packages/com.shifthackz.aisdv1.app.foss)
+* [`com.willbsp.habits`](https://f-droid.org/packages/com.willbsp.habits)
+* [`de.phrogg.bg2banglejs`](https://f-droid.org/packages/de.phrogg.bg2banglejs) [signflinger]
+* [`eu.hydrologis.smash`](https://f-droid.org/packages/eu.hydrologis.smash) [signflinger]
+* [`geddit.buzl.uk`](https://f-droid.org/packages/geddit.buzl.uk) [signflinger]
+* [`io.github.doubi88.slideshowwallpaper`](https://f-droid.org/packages/io.github.doubi88.slideshowwallpaper)
+* [`io.gitlab.pycpim.marxist`](https://f-droid.org/packages/io.gitlab.pycpim.marxist)
+* [`nodo.crogers.exercisereminders`](https://f-droid.org/packages/nodo.crogers.exercisereminders)
+* [`org.hzontal.tellaFOSS`](https://f-droid.org/packages/org.hzontal.tellaFOSS) [signflinger]
+* [`vegabobo.dsusideloader`](https://f-droid.org/packages/vegabobo.dsusideloader)
+
+</details>
+
 ---
 
-Total number of apps using RB: 7 + 138 = 145.
+Total number of apps using RB: 7 + 158 = 165.
 
 ---
 
@@ -310,20 +339,20 @@ Total number of apps using RB: 7 + 138 = 145.
 ![adds](../graphs/adds.png)
 
 Description: graph "New apps (not 100% accurate)", showing new apps
-added per month from 2022-11-01 to 2023-07-01, with an average of
+added per month from 2022-11-01 to 2023-08-01, with an average of
 about 25 new apps per month, with the fraction of those being
-reproducible rising from about half to almost three quarters.
+reproducible rising from about half to over two thirds.
 
 ![rems](../graphs/rems.png)
 
 Description: graph "Removed apps (not 100% accurate)", showing apps
-removed added per month from 2022-11-01 to 2023-07-01, with most
-months seeing about 1-5 apps removed, and 3 months with 10-14 removed.
+removed added per month from 2022-11-01 to 2023-08-01, with most
+months seeing about 1-5 apps removed, and 4 months with 10-14 removed.
 
 ![apps](../graphs/apps.png)
 
 Description: graph "F-Droid apps (not 100% accurate)", showing the
-total number of apps per month from 2022-11-01 to 2023-07-01, about
+total number of apps per month from 2022-11-01 to 2023-08-01, about
 4000, slowly increasing over time, and the fraction of those being
 reproducible rising from almost none to about 4%.
 
@@ -331,10 +360,10 @@ reproducible rising from almost none to about 4%.
 
 Description: graph "Apps published with Reproducible Builds
 (signatures in metadata)", showing 6 apps on 2022-11-01, and 7 apps on
-2023-07-01.
+2023-08-01.
 
 ![bins](../graphs/bins.png)
 
 Description: graph "Apps published with Reproducible Builds
 (Binaries)", showing an almost straight line from 14 apps on
-2022-11-01 to 138 apps on 2023-07-01.
+2022-11-01 to 158 apps on 2023-08-01.
