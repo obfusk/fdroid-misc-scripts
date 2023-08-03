@@ -41,6 +41,7 @@ app.reading.stoic.stoicreading2
 app.seeneva.reader
 app.shosetsu.android.fdroid
 app.simple.inure
+app.suhasdissa.foode
 app.tice.TICE.production
 app.varlorg.unote
 app.weatheroverview
@@ -69,7 +70,6 @@ at.linuxtage.companion
 at.manuelbichler.octalsuntime
 at.mikenet.serbianlatintocyrillic
 at.or.at.plugoffairplane
-at.tacticaldevc.panictrigger
 at.techbee.jtx
 at.tomtasche.reader
 atitel.com.todoer
@@ -100,8 +100,10 @@ be.ppareit.swiftp_free
 be.quentinloos.manille
 be.ugent.zeus.hydra.open
 be.uhasselt.privacypolice
+biz.binarysolutions.weatherusa
 biz.gyrus.yaab
 bluepie.ad_silence
+bored.codebyk.mintcalc
 bou.amine.apps.readerforselfossv2.android
 br.com.colman.nato
 br.com.colman.petals
@@ -427,8 +429,12 @@ com.blogspot.developersu.ns_usbloader
 com.blogspot.e_kanivets.moneytracker
 com.bmco.cratesiounofficial
 com.bmpak.anagramsolver
+com.bnyro.clock
+com.bnyro.contacts
+com.bnyro.recorder
 com.bnyro.translate
 com.bnyro.trivia
+com.bnyro.wallpaper
 com.boardgamegeek
 com.bobbyrne01.howfardoyouswim
 com.bobek.compass
@@ -552,6 +558,7 @@ com.darkempire78.opencalculator
 com.darknessmap
 com.darshancomputing.BatteryIndicator
 com.darshancomputing.BatteryIndicatorPro
+com.databag
 com.daviancorp.android.mh4udatabase
 com.daviancorp.android.monsterhunter3udatabase
 com.davidshewitt.admincontrol
@@ -633,6 +640,7 @@ com.ei.bmicalc
 com.eibriel.reddot
 com.eightsines.firestrike.opensource
 com.einmalfel.podlisten
+com.elasticrock.keepscreenon
 com.elektropepi.bootboi
 com.elementarytoday.theia
 com.elementlo.spark_list
@@ -661,6 +669,7 @@ com.eolwral.osmonitor
 com.episode6.android.appalarm.pro
 com.ero.kinoko
 com.espruino.gadgetbridge.banglejs
+com.etb.filemanager
 com.etesync.notes
 com.etesync.syncadapter
 com.euedge.openaviationmap.android
@@ -727,7 +736,6 @@ com.forrestguice.suntimescalendars
 com.forrestguice.suntimeswidget
 com.fox2code.mmm.fdroid
 com.foxdebug.acode
-com.fproject.cryptolitycs
 com.fr.laboussole.track
 com.fr3ts0n.androbd.plugin.gpsprovider
 com.fr3ts0n.androbd.plugin.mqtt
@@ -763,6 +771,7 @@ com.gbeatty.arxiv
 com.gcstar.scanner
 com.gcstar.viewer
 com.geecko.QuickLyric
+com.geekorum.ttrss.free
 com.gelakinetic.mtgfam
 com.genonbeta.TrebleShot
 com.geoquizfoss
@@ -776,7 +785,6 @@ com.gianlu.aria2android
 com.gianlu.aria2app
 com.gianlu.dnshero
 com.gimranov.zandy.app
-com.ginkel.hashit
 com.gitea.theoden8.sudaku
 com.github.aba2l.taswast
 com.github.alijc.cricketsalarm
@@ -978,6 +986,7 @@ com.idunnololz.igo
 com.igisw.openmoneybox
 com.igormaznitsa.piratedice
 com.ihunda.android.binauralbeat
+com.illusionman1212.lyricsgrabbr
 com.improvement_roll
 com.in.my.district
 com.inator.calculator
@@ -1106,6 +1115,7 @@ com.kolloware.wechange
 com.kolserdav.ana
 com.koshai_limited.klock
 com.kostmo.wallpaper.spiral
+com.kounex.obsBlade
 com.koushikdutta.superuser
 com.kpstv.xclipper
 com.kpz.pomodorotasks.activity
@@ -1204,7 +1214,6 @@ com.matt.bolton
 com.matt.outfield
 com.mattallen.dpixel
 com.mattallen.loaned
-com.matteopacini.katana
 com.mattermost.rnbeta
 com.mattgmg.miracastwidget
 com.mattieapps.roommates
@@ -1303,7 +1312,6 @@ com.nextcloud.android.beta
 com.nextcloud.client
 com.nextcloud.talk2
 com.nextcloud_cookbook_flutter
-com.nextcloudpasswords
 com.nextgis.mobile
 com.nhellfire.kerneladiutor
 com.nickspatties.timeclock
@@ -1319,6 +1327,7 @@ com.nilhcem.hostseditor
 com.nima.demomusix
 com.nima.guessthatpokemon
 com.nima.mymood
+com.nima.openbooksdownloader
 com.nima.taskmanager
 com.nima.wikianime
 com.niparasc.papanikolis
@@ -1448,6 +1457,7 @@ com.punksta.apps.volumecontrol
 com.purplefoto.pfdock
 com.pvcodes.debtcalc
 com.pvpc.precio_luz
+com.qfs.pagan
 com.qsp.player
 com.quaap.audiometer
 com.quaap.bookymcbookface
@@ -1563,6 +1573,7 @@ com.shadcat.secdroid
 com.shadow.blackhole
 com.shanewmiller.gorecompanion
 com.shatteredpixel.shatteredpixeldungeon
+com.shifthackz.aisdv1.app.foss
 com.shkmishra.lyrically
 com.showmehills
 com.shurik.droidzebra
@@ -1826,9 +1837,11 @@ com.wesaphzt.privatelocation
 com.wesaphzt.privatelock
 com.weskenyon.bookmarkos
 com.wikaba.ogapp
+com.willbsp.habits
 com.willchan.simple_random_stock
 com.willhauck.linconnectclient
 com.willianveiga.countdowntimer
+com.windscribe.vpn
 com.winston69.simpill
 com.wire
 com.wireguard.android
@@ -2085,6 +2098,7 @@ de.live.gdev.cherrymusic
 de.live.gdev.timetracker
 de.lsubel.amam
 de.luhmer.owncloudnewsreader
+de.lukasneugebauer.nextcloudcookbook
 de.lukaspieper.gcam.services
 de.mangelow.balance
 de.mangelow.debdroid
@@ -2144,6 +2158,7 @@ de.perflyst.untis
 de.ph1b.audiobook
 de.phoenixstudios.pc_dimmer
 de.php_tech.piggybudget
+de.phrogg.bg2banglejs
 de.pinyto.exalteddicer
 de.piratentools.spickerrr
 de.pixart.messenger
@@ -2253,11 +2268,11 @@ dev.datlag.burningseries
 dev.develsinthedetails.eatpoopyoucat
 dev.drsoran.moloko
 dev.jmoore.lametricnotify
-dev.jtsalva.cloudmare
 dev.lbeernaert.youhavemail
 dev.leonlatsch.photok
 dev.linwood.butterfly
 dev.linwood.butterfly.nightly
+dev.linwood.flow.nightly
 dev.lonami.klooni
 dev.lucanlm.antimine
 dev.marchello.sharik
@@ -2328,10 +2343,10 @@ eu.e43.impeller
 eu.faircode.email
 eu.faircode.finegeotag
 eu.faircode.netguard
-eu.faircode.xlua
 eu.flatworld.android.slider
 eu.halaser.beamctrl
 eu.hydrologis.geopaparazzi
+eu.hydrologis.smash
 eu.johncasson.meerkatchallenge
 eu.kanade.tachiyomi
 eu.lavarde.pmtd
@@ -2482,6 +2497,7 @@ friimaind.piholedroid
 ga.testapp.testapp
 gal.sli.digalnet
 gal.sli.singal
+geddit.buzl.uk
 genius.mohammad.floating.stickies
 gg.mw.passera
 giraffine.dimmer
@@ -2559,6 +2575,7 @@ info.guardianproject.ripple
 info.lamatricexiste.network
 info.meoblast001.thugaim
 info.metadude.android.bitsundbaeume.schedule
+info.metadude.android.cccamp.schedule
 info.metadude.android.clt.schedule
 info.metadude.android.congress.schedule
 info.metadude.android.datenspuren.schedule
@@ -2604,11 +2621,13 @@ io.github.deweyreed.clipboardcleaner
 io.github.deweyreed.timer.other
 io.github.divverent.aaaaxy
 io.github.dkter.aaaaa
+io.github.dlbeswick.kreuungching
 io.github.domi04151309.alwayson
 io.github.domi04151309.batterytool
 io.github.domi04151309.home
 io.github.domi04151309.podscompanion
 io.github.domi04151309.powerapp
+io.github.doubi88.slideshowwallpaper
 io.github.droidapps.pdfreader
 io.github.easyintent.quickref
 io.github.engsergiu.react
@@ -2675,7 +2694,7 @@ io.gitlab.allenb1.todolist
 io.gitlab.cryptographic_id
 io.gitlab.danielrparks.vibrato
 io.gitlab.listentogether
-io.gitlab.mudassir.youtubecacher
+io.gitlab.pycpim.marxist
 io.gresse.hugo.anecdote
 io.heckel.ntfy
 io.homeassistant.companion.android.minimal
@@ -2914,7 +2933,6 @@ moe.dic1911.urlsanitizer
 moe.lz233.unvcode
 moe.martini.midictrl
 moe.matsuri.lite
-moe.minori.pgpclipper
 mohammad.adib.roundr
 monakhv.android.samlib
 mono.hg
@@ -2940,6 +2958,7 @@ net.alaindonesia.silectric
 net.alegen.android.netclip
 net.androidcomics.acv
 net.anzix.osm.upload
+net.artificialworlds.boxstacker
 net.artificialworlds.rabbitescape
 net.asceai.meritous
 net.avs234
@@ -2947,7 +2966,6 @@ net.basov.lws.fdroid
 net.basov.lws.qr.fdroid
 net.basov.omn.fdroid
 net.bible.android.activity
-net.bierbaumer.otp_authenticator
 net.bitconomy.ckpoolwatcher
 net.bitplane.android.microphone
 net.bluetoothviewer
@@ -3072,6 +3090,7 @@ net.sourceforge.subsonic.androidapp
 net.sourceforge.wifiremoteplay
 net.sourceforge.x11basic
 net.stargw.contactsimport
+net.stargw.fat
 net.stargw.fok
 net.stargw.fx
 net.stkaddons.viewer
@@ -3129,6 +3148,7 @@ nl.tsmeets.todotree
 nl.ttys0.simplec25k
 nl.viter.glider
 nl.yoerinijs.notebuddy
+nodo.crogers.exercisereminders
 nodom.darkfm.inventoryguimobile
 nodomain.freeyourgadget.gadgetbridge
 nodomain.freeyourgadget.tpmsmonitor
@@ -3143,10 +3163,6 @@ ohi.andre.consolelauncher
 ohm.quickdice
 om.sstvencoder
 omegacentauri.mobi.simplestopwatch
-one.librem.chat
-one.librem.social
-one.librem.social.multi
-one.librem.tunnel
 one.scarecrow.games.OPMT
 online.xournal.mobile
 ooo.akito.webmon
@@ -3328,7 +3344,6 @@ org.epstudios.epmobile
 org.epstudios.morbidmeter
 org.equeim.tremotesf
 org.esteban.piano
-org.ethack.orwall
 org.eu.exodus_privacy.exodusprivacy
 org.eukalyptus.balance
 org.eukalyptus.liquidrechner
@@ -3407,6 +3422,7 @@ org.holylobster.nuntius
 org.horaapps.leafpic
 org.hwyl.sexytopo
 org.hystudio.android.dosbox
+org.hzontal.tellaFOSS
 org.icasdri.mather
 org.ietf.ietfsched
 org.iilab.openmentoring
@@ -3706,7 +3722,6 @@ org.sensors2.pd
 org.servDroid.web
 org.servalproject
 org.sge.haltestellenanzeige
-org.shadowice.flocke.andotp
 org.shirakumo.ocelot
 org.shortcuts
 org.sickstache
@@ -4119,6 +4134,7 @@ us.spotco.maps
 us.spotco.motionlock
 uscartools.USTravelConverter
 ut.ewh.audiometrytest
+vegabobo.dsusideloader
 vnd.blueararat.kaleidoscope6
 vocabletrainer.heinecke.aron.vocabletrainer
 wangdaye.com.geometricweather

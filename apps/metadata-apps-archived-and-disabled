@@ -6,6 +6,7 @@ ar.com.tristeslostrestigres.diasporanativewebapp
 ar.com.tristeslostrestigres.redpanal
 at.h4x.fdroidforumclient
 at.h4x.metaapp
+at.tacticaldevc.panictrigger
 at.zweng.bankomatinfos
 au.com.darkside.XServer
 awais.instagrabber
@@ -55,8 +56,10 @@ com.eleybourn.bookcatalogue
 com.example.CosyDVR
 com.fastaccess.github
 com.fivasim.antikythera
+com.fproject.cryptolitycs
 com.fsck.k9.material
 com.gianlu.pretendyourexyzzy
+com.ginkel.hashit
 com.github.axet.maps
 com.github.doomsdayrs.apps.shosetsu
 com.github.funkyg.funkytunes
@@ -96,6 +99,7 @@ com.liveplayergames.finneypoker
 com.luorrak.ouroboros
 com.mapswithme.maps.libre
 com.maralexbar.wifikeyview
+com.matteopacini.katana
 com.mattermost.mattermost
 com.mbestavros.geometricweather
 com.mdroid
@@ -108,6 +112,7 @@ com.murrayc.galaxyzoo.app
 com.naholyr.android.horairessncf
 com.namsor.api.samples.gendre
 com.nephoapp.anarxiv
+com.nextcloudpasswords
 com.nucc.hackwinds
 com.numix.calculator
 com.numix.icons_circle
@@ -180,8 +185,10 @@ de.ub0r.android.websms
 de.ub0r.android.websms.connector.gmx
 de.ub0r.android.websms.connector.smspilotru
 deep.ryd.rydplayer
+dev.jtsalva.cloudmare
 dulleh.akhyou.fdroid
 edu.nyu.cs.omnidroid.app
+eu.faircode.xlua
 eu.lighthouselabs.obd.reader
 eu.siacs.conversations.legacy
 eu.sum7.conversations
@@ -210,11 +217,11 @@ info.guardianproject.lildebi
 info.guardianproject.notepadbot
 info.guardianproject.otr.app.im
 info.kesavan.malartoon
-info.metadude.android.cccamp.schedule
 io.github.baiatbun.react
 io.github.froodyapp
 io.github.lonamiwebs.klooni
 io.github.phora.androptpb
+io.gitlab.mudassir.youtubecacher
 io.infinyte7.ankiimageocclusion
 io.nekohasekai.sagernet.plugin.xtls
 io.trezor.app
@@ -236,12 +243,14 @@ me.sheimi.sgit
 me.writeily.pro
 ml.adamsprogs.bimba
 moe.feng.nhentai
+moe.minori.pgpclipper
 naman14.timber
 name.myigel.fahrplan.eh17
 nerd.tuxmobil.fahrplan.camp
 nerd.tuxmobil.fahrplan.congress
 net.androcom.dho.speakerproximity
 net.androgames.level
+net.bierbaumer.otp_authenticator
 net.bytten.xkcdviewer
 net.fred.feedex
 net.imatruck.betterweather
@@ -260,6 +269,10 @@ nl.rijksoverheid.ctr.verifier
 no.rkkc.bysykkel
 nu.firetech.android.pactrack
 nz.org.cacophony.birdmonitor
+one.librem.chat
+one.librem.social
+one.librem.social.multi
+one.librem.tunnel
 onlymash.flexbooru.play
 oppen.gemini.ariane
 org.addhen.smssync
@@ -272,6 +285,7 @@ org.cyanogenmod.wundergroundcmweatherprovider
 org.diasurgical.devilutionx
 org.dicio.dicio_android
 org.droidseries
+org.ethack.orwall
 org.example.pushupbuddy
 org.fdroid.fdroid.ota
 org.flyve.mdm.agent
@@ -312,6 +326,7 @@ org.secuso.privacyfriendlycardgameone
 org.secuso.privacyfriendlynetmonitor
 org.secuso.privacyfriendlyweather
 org.secuso.privacyfriendlywifimanager
+org.shadowice.flocke.andotp
 org.sixgun.ponyexpress
 org.smerty.zooborns
 org.spechide.btappnder.whatsapptransmitter
