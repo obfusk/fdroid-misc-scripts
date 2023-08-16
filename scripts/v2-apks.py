@@ -45,18 +45,22 @@ for appid in sorted(apps):
     m = set(metadata_codes.get(appid, []))
     r = set(repo_codes.get(appid, []))
     a = set(archive_codes.get(appid, []))
-    if m != r | a or r & a:
+    overlap = r & a
+    if m != r | a or overlap:
         extra = (r | a) - m
         missing = m - (r | a)
-        if extra or (show_missing and missing) or r & a:
+        if extra or (show_missing and missing) or overlap:
             print(f"==> {appid}")
             if verbose:
-                print(f"  metadata: {', '.join(map(str, sorted(m)))}")
-                print(f"  repo    : {', '.join(map(str, sorted(r)))}")
-                print(f"  archive : {', '.join(map(str, sorted(a)))}")
+                print(f"  metadata        : {', '.join(map(str, sorted(m)))}")
+                print(f"  repo            : {', '.join(map(str, sorted(r)))}")
+                print(f"  archive         : {', '.join(map(str, sorted(a)))}")
         if extra:
-            print(f"  extra   : {', '.join(map(str, sorted(extra)))}")
+            if r - m:
+                print(f"  extra (repo)    : {', '.join(map(str, sorted(r - m)))}")
+            if a - m:
+                print(f"  extra (archive) : {', '.join(map(str, sorted(a - m)))}")
         if show_missing and missing:
-            print(f"  missing : {', '.join(map(str, sorted(missing)))}")
-        if r & a:
-            print("  repo and archive overlap")
+            print(f"  missing         : {', '.join(map(str, sorted(missing)))}")
+        if overlap:
+            print(f"  overlap (r & a) : {', '.join(map(str, sorted(overlap)))}")
