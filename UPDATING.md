@@ -1,4 +1,4 @@
-## Update fdroiddata & index
+## Update fdroiddata & v1 index
 
 Manually: pull `fdroiddata`.
 
@@ -75,4 +75,18 @@ $ ../scripts/detect-virtual-entry.sh
 
 ```sh
 $ ./scripts/detect-permissions.py REQUEST_INSTALL_PACKAGES
+```
+
+## Optional: update v2 index
+
+```sh
+$ ./scripts/download-v2.sh
+```
+
+## Optional: detect v2 inconsistencies
+
+NB: after updating `fdroiddata` and the v2 index.
+
+```sh
+$ ./scripts/v2-apks.py -v
 ```

@@ -31,7 +31,7 @@ require [`apksigtool`](https://github.com/obfusk/apksigtool),
 
 ## Scripts
 
-### Index & metadata
+### Index & metadata (v1)
 
 #### download-index.sh
 
@@ -101,6 +101,27 @@ Update `stats/YYYY-MM-DD-{adds,rems}` &
 
 ```sh
 $ ./scripts/update-diffs.sh
+```
+
+### Index & metadata (v2)
+
+#### download-v2.sh
+
+Downloads F-Droid's `entry.jar` (& extracts `entry.json` from it) and
+`index-v2.json` (& checks the signatures and checksums), for both `repo/` and
+`archive`, and saves them in `v2/`.
+
+```sh
+$ ./scripts/download-v2.sh
+```
+
+#### v2-apks.py
+
+Checks for inconsistencies between (version codes of) APKs in `fdroiddata` and
+the `v2/` index.
+
+```sh
+$ ./scripts/v2-apks.py -v
 ```
 
 ### Reproducible Builds: Overview
