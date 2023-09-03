@@ -3,13 +3,13 @@
 Publishing apps with Reproducible Builds: https://f-droid.org/docs/Reproducible_Builds/  
 Verification builds: https://f-droid.org/docs/Verification_Server/  
 Scripts and data: https://github.com/obfusk/fdroid-misc-scripts  
-Last updated: 2023-08-03
+Last updated: 2023-09-03
 
 ![rb](../graphs/rb.png)
 
 Description: graph "Apps published with Reproducible Builds (all)",
-showing an almost straight line from 20 apps on 2022-11-01 to 165 apps
-on 2023-08-01.
+showing an almost straight line from 20 apps on 2022-11-01 to 191 apps
+on 2023-09-01.
 
 ### Signatures in metadata: publishing both (upstream) developer-signed and F-Droid-signed APKs
 
@@ -29,7 +29,7 @@ All apps (includes 1 no longer RB, making 7):
 
 </details>
 
-#### 2023-{05,06,07,08}-01: 7 apps
+#### 2023-{05,06,07,08,09}-01: 7 apps
 
 All apps (NewPipe is RB again, making 7):
 
@@ -238,7 +238,7 @@ Switched to RB:
 
 </details>
 
-#### 2023-06-01: 117 apps (+ 14, - 1)
+#### 2023-06-01: 116 apps (+ 14, - 2)
 
 Newly added:
 
@@ -269,7 +269,15 @@ Switched away from RB:
 
 </details>
 
-#### 2023-07-01: 138 apps (+ 21)
+Archived:
+
+<details>
+
+* [`de.corona.tracing`](https://f-droid.org/packages/de.corona.tracing)
+
+</details>
+
+#### 2023-07-01: 137 apps (+ 21)
 
 Newly added (none were removed):
 
@@ -299,7 +307,7 @@ Newly added (none were removed):
 
 </details>
 
-#### 2023-08-01: 158 apps (+ 20)
+#### 2023-08-01: 157 apps (+ 20)
 
 Newly added (none were removed):
 
@@ -328,9 +336,52 @@ Newly added (none were removed):
 
 </details>
 
+#### 2023-09-01: 184 apps (+ 27)
+
+Newly added (none were removed):
+
+<details>
+
+* [`app.michaelwuensch.bitbanana`](https://f-droid.org/packages/app.michaelwuensch.bitbanana)
+* [`bored.codebyk.mint_task`](https://f-droid.org/packages/bored.codebyk.mint_task) [signflinger]
+* [`cloud.pablos.overload`](https://f-droid.org/packages/cloud.pablos.overload)
+* [`com.ammar.wallflow`](https://f-droid.org/packages/com.ammar.wallflow)
+* [`com.baldo.bob`](https://f-droid.org/packages/com.baldo.bob)
+* [`com.f0x1d.logfox`](https://f-droid.org/packages/com.f0x1d.logfox)
+* [`com.geekorum.ttrss.free`](https://f-droid.org/packages/com.geekorum.ttrss.free)
+* [`com.maxrave.simpmusic`](https://f-droid.org/packages/com.maxrave.simpmusic)
+* [`com.noto`](https://f-droid.org/packages/com.noto) [signflinger]
+* [`com.openstablediffusion`](https://f-droid.org/packages/com.openstablediffusion)
+* [`com.upbad.apps.autonotify`](https://f-droid.org/packages/com.upbad.apps.autonotify)
+* [`com.wirelessalien.android.bhagavadgita`](https://f-droid.org/packages/com.wirelessalien.android.bhagavadgita) [signflinger]
+* [`dev.medzik.librepass.android`](https://f-droid.org/packages/dev.medzik.librepass.android)
+* [`io.github.benderblog.traintime_pda`](https://f-droid.org/packages/io.github.benderblog.traintime_pda) [signflinger]
+* [`io.github.pastthepixels.freepaint`](https://f-droid.org/packages/io.github.pastthepixels.freepaint)
+* [`net.artificialworlds.boxstacker`](https://f-droid.org/packages/net.artificialworlds.boxstacker)
+* [`net.e1547`](https://f-droid.org/packages/net.e1547) [signflinger]
+* [`net.retiolus.cigalo`](https://f-droid.org/packages/net.retiolus.cigalo)
+* [`net.stargw.applist`](https://f-droid.org/packages/net.stargw.applist)
+* [`net.stargw.contacts`](https://f-droid.org/packages/net.stargw.contacts) [signflinger]
+* [`net.stargw.fat`](https://f-droid.org/packages/net.stargw.fat) [signflinger]
+* [`org.fcitx.fcitx5.android.plugin.clipboard_filter`](https://f-droid.org/packages/org.fcitx.fcitx5.android.plugin.clipboard_filter)
+* [`org.privacymatters.safespace`](https://f-droid.org/packages/org.privacymatters.safespace)
+* [`org.sirekanyan.knigopis`](https://f-droid.org/packages/org.sirekanyan.knigopis) [signflinger]
+* [`org.sirekanyan.outline`](https://f-droid.org/packages/org.sirekanyan.outline)
+
+</details>
+
+Switched to RB:
+
+<details>
+
+* [`net.stargw.contactsimport`](https://f-droid.org/packages/net.stargw.contactsimport) [signflinger]
+* [`net.stargw.fx`](https://f-droid.org/packages/net.stargw.fx)
+
+</details>
+
 ---
 
-Total number of apps using RB: 7 + 158 = 165.
+Total number of apps using RB: 7 + 184 = 191.
 
 ---
 
@@ -339,31 +390,31 @@ Total number of apps using RB: 7 + 158 = 165.
 ![adds](../graphs/adds.png)
 
 Description: graph "New apps (not 100% accurate)", showing new apps
-added per month from 2022-11-01 to 2023-08-01, with an average of
+added per month from 2022-11-01 to 2023-09-01, with an average of
 about 25 new apps per month, with the fraction of those being
 reproducible rising from about half to over two thirds.
 
 ![rems](../graphs/rems.png)
 
 Description: graph "Removed apps (not 100% accurate)", showing apps
-removed added per month from 2022-11-01 to 2023-08-01, with most
-months seeing about 1-5 apps removed, and 4 months with 10-14 removed.
+removed added per month from 2022-11-01 to 2023-09-01, with most
+months seeing about 1-5 apps removed, and 5 months with 10-14 removed.
 
 ![apps](../graphs/apps.png)
 
 Description: graph "F-Droid apps (not 100% accurate)", showing the
-total number of apps per month from 2022-11-01 to 2023-08-01, about
+total number of apps per month from 2022-11-01 to 2023-09-01, about
 4000, slowly increasing over time, and the fraction of those being
-reproducible rising from almost none to about 4%.
+reproducible rising from almost none to about 5%.
 
 ![sigs](../graphs/sigs.png)
 
 Description: graph "Apps published with Reproducible Builds
 (signatures in metadata)", showing 6 apps on 2022-11-01, and 7 apps on
-2023-08-01.
+2023-09-01.
 
 ![bins](../graphs/bins.png)
 
 Description: graph "Apps published with Reproducible Builds
 (Binaries)", showing an almost straight line from 14 apps on
-2022-11-01 to 158 apps on 2023-08-01.
+2022-11-01 to 184 apps on 2023-09-01.
