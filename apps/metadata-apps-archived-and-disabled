@@ -16,6 +16,9 @@ be.mygod.vpnhotspot
 br.com.dgimenes.nasapic
 byrne.utilities.pasteedroid
 campyre.android
+ch.admin.bag.covidcertificate.verifier
+ch.admin.bag.covidcertificate.wallet
+ch.corona.tracing
 chromiumupdater.bamless.com.chromiumsweupdater
 com.SecUpwN.AIMSICD
 com.actisec.clipcaster
@@ -33,6 +36,7 @@ com.anysoftkeyboard.languagepack.hebrew_large
 com.anysoftkeyboard.languagepack.hungarian
 com.artifex.mupdf.mini
 com.artifex.mupdfdemo
+com.aurora.adroid
 com.axelby.podax
 com.bec3.diolite
 com.beem.project.beem
@@ -47,11 +51,13 @@ com.chmod0.manpages
 com.code.android.vibevault
 com.collabora.libreoffice
 com.csipsimple
+com.ctemplar.app.fdroid
 com.derek_s.hubble_gallery
 com.developfreedom.wordpowermadeeasy
 com.digitallizard.nicecompass
 com.dosse.chromiumautoupdater
 com.dragons.aurora
+com.ecuamobi.deckwallet
 com.eleybourn.bookcatalogue
 com.example.CosyDVR
 com.fastaccess.github
@@ -120,6 +126,7 @@ com.onest8.onetimepad
 com.peppercarrot.runninggame
 com.pi.attestation
 com.pjuu.droidotter
+com.powerpoint45.lucidbrowser
 com.rehanced.lunary
 com.reicast.emulator
 com.ruqqienav
@@ -135,6 +142,7 @@ com.simplemobiletools.filemanager
 com.simplemobiletools.gallery
 com.simplemobiletools.notes
 com.simplytranslate
+com.sirekanyan.knigopis
 com.studio332.flickit
 com.syncedsynapse.kore2
 com.teleca.jamendo
@@ -337,6 +345,7 @@ org.toulibre.cdl
 org.transdroid
 org.tw.onze.cmtheme
 org.twelf.cmtheme
+org.vudroid
 org.wheelmap.android.online
 org.wikilovesmonuments
 org.wikimedia.commons

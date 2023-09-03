@@ -31,7 +31,9 @@ app.fedilab.tubelab
 app.halma
 app.intra
 app.librenews.io.librenews
+app.michaelwuensch.bitbanana
 app.mlauncher
+app.myzel394.locus
 app.olauncher
 app.olaunchercf
 app.openconnect
@@ -103,6 +105,7 @@ be.uhasselt.privacypolice
 biz.binarysolutions.weatherusa
 biz.gyrus.yaab
 bluepie.ad_silence
+bored.codebyk.mint_task
 bored.codebyk.mintcalc
 bou.amine.apps.readerforselfossv2.android
 br.com.colman.nato
@@ -144,6 +147,7 @@ caldwell.ben.bites
 caldwell.ben.trolly
 cat.jordihernandez.cinecat
 cat.mvmike.minimalcalendarwidget
+cat.naval.florae
 cat.pantsu.nyaapantsu
 cc.calliope.mini
 cc.co.eurdev.urecorder
@@ -156,8 +160,6 @@ cf.playhi.freezeyou
 cf.theonewiththebraid.guerrilla_mail
 ch.abertschi.adfree
 ch.abertschi.waterme.water_me
-ch.admin.bag.covidcertificate.verifier
-ch.admin.bag.covidcertificate.wallet
 ch.bailu.aat
 ch.blinkenlights.android.apnswitch
 ch.blinkenlights.android.vanilla
@@ -165,7 +167,6 @@ ch.blinkenlights.android.vanillaplug
 ch.blinkenlights.battery
 ch.bubendorf.locusaddon.gsakdatabase
 ch.citux.td
-ch.corona.tracing
 ch.corten.aha.worldclock
 ch.cryptobit.letterbox
 ch.deletescape.lawnchair.plah
@@ -202,6 +203,7 @@ click.dummer.notify_to_jabber
 click.dummer.rickapp
 click.dummer.textthing
 click.dummer.yidkey
+cloud.pablos.overload
 cloud.valetudo.companion
 cn.ac.lz233.tarnhelm
 co.appreactor.news
@@ -290,10 +292,12 @@ com.amanoteam.unalix
 com.amaze.filemanager
 com.amaze.fileutilities
 com.ames.books
+com.ammar.wallflow
 com.amnesica.clearclipboard
 com.amnesica.kryptey
 com.amphoras.tpthelper
 com.amrdeveloper.linkhub
+com.anandnet.harmonymusic
 com.ancantus.HYPNOTOAD
 com.andrew.apollo
 com.android.adbkeyboard
@@ -390,7 +394,6 @@ com.atop
 com.atr.hiit
 com.atr.tedit
 com.atul.musicplayer
-com.aurora.adroid
 com.aurora.corona
 com.aurora.store
 com.autismprime.fall
@@ -399,11 +402,13 @@ com.averi.worldscribe
 com.b44t.messenger
 com.bagaturchess
 com.bald.uriah.baldphone
+com.baldo.bob
 com.banasiak.coinflip
 com.banasiak.coinflipext.example
 com.bec3.mobilite
 com.beemdevelopment.aegis
 com.benarmstead.simplecooking
+com.benjaminwan.chinesettstflite
 com.benny.openlauncher
 com.benny.pxerstudio
 com.berdik.letmedowngrade
@@ -536,7 +541,6 @@ com.crazyhitty.chdev.ks.munch
 com.crazylegend.subhub
 com.crazylegend.vigilante
 com.csmarosi.wifiautoff
-com.ctemplar.app.fdroid
 com.cweb.messenger
 com.cyanogenmod.filemanager.ics
 com.cyb3rko.flashdim
@@ -634,7 +638,6 @@ com.easwareapps.transparentwidget
 com.easyfitness
 com.easytarget.micopi
 com.ebaschiera.triplecamel
-com.ecuamobi.deckwallet
 com.edwardoyarzun.diccionario
 com.ei.bmicalc
 com.eibriel.reddot
@@ -706,6 +709,7 @@ com.example.tobiastrumm.freifunkautoconnect
 com.example.trigger
 com.exifthumbnailadder.app
 com.f0x.eddymalou
+com.f0x1d.logfox
 com.fabienli.dokuwiki
 com.fake.android.torchlight
 com.falconware.prestissimo
@@ -904,6 +908,7 @@ com.gmail.cn.leetao94.rssaid
 com.gmail.jerickson314.sdscanner
 com.gmail.jiwopene.temperature
 com.gmail.mugcuposup.android
+com.gnethomelinux.midistrum
 com.gokadzev.musify.fdroid
 com.gokhanmoral.stweaks.app
 com.goltzkiste.guessaday
@@ -1222,6 +1227,7 @@ com.mattmaniak.rubbishCalc
 com.maxfierke.sandwichroulette
 com.maxfour.music
 com.maxistar.textpad
+com.maxrave.simpmusic
 com.maze_squirrel
 com.mcsnowflake.worktimer
 com.mde.potdroid
@@ -1348,6 +1354,7 @@ com.nononsenseapps.notepad
 com.nononsenseapps.wanidoku
 com.noprestige.kanaquiz
 com.notecryptpro
+com.noto
 com.notriddle.budget
 com.notriddle.null_launcer
 com.npes87184.s2tdroid.donate
@@ -1383,6 +1390,7 @@ com.opencamera_sensors.app
 com.opendoorstudios.ds4droid
 com.openear.www
 com.openpi.spellingwizard
+com.openstablediffusion
 com.orgzly
 com.oriondev.moneywallet
 com.orphan.amplayer
@@ -1443,7 +1451,6 @@ com.porg.gugal
 com.poupa.attestationdeplacement
 com.poupa.vinylmusicplayer
 com.powerje.nyan
-com.powerpoint45.lucidbrowser
 com.practicalapps.hamtrainer
 com.prangesoftwaresolutions.audioanchor
 com.prhlt.aemus.Read4SpeechExperiments
@@ -1605,7 +1612,6 @@ com.simplemobiletools.thankyou
 com.simplemobiletools.voicerecorder
 com.simplytranslate_mobile
 com.sinpo.xnfc
-com.sirekanyan.knigopis
 com.sismics.reader
 com.slash.batterychargelimit
 com.sleeptimer
@@ -1782,6 +1788,7 @@ com.unicornsonlsd.finamp
 com.unitstool
 com.unwind.networkmonitor
 com.unwrappedapps.android.wallpaper.creative
+com.upbad.apps.autonotify
 com.uploadedlobster.PwdHash
 com.urbandroid.dontkillmyapp
 com.utazukin.ichaival
@@ -1845,6 +1852,7 @@ com.windscribe.vpn
 com.winston69.simpill
 com.wire
 com.wireguard.android
+com.wirelessalien.android.bhagavadgita
 com.wirelessalien.zipxtract
 com.wmstein.tourcount
 com.wmstein.transektcount
@@ -1969,6 +1977,7 @@ de.benibela.videlibri
 de.beocode.bestbefore
 de.beowulf.libretranslater
 de.beowulf.wetter
+de.bernd.bikalo
 de.binary_kitchen.doorlock_app
 de.bitsharesmunich.wallet
 de.bjusystems.vdrmanager
@@ -2276,6 +2285,7 @@ dev.linwood.flow.nightly
 dev.lonami.klooni
 dev.lucanlm.antimine
 dev.marchello.sharik
+dev.medzik.librepass.android
 dev.melonpan.kotori
 dev.msfjarvis.aps
 dev.obfusk.jiten
@@ -2586,6 +2596,7 @@ info.metadude.android.foss4g.schedule
 info.metadude.android.gpn.schedule
 info.metadude.android.hope.schedule
 info.metadude.android.libreoffice.schedule
+info.metadude.android.mrmcd.schedule
 info.metadude.android.pyconza.schedule
 info.metadude.android.rc3.schedule
 info.papdt.blackblub
@@ -2612,6 +2623,7 @@ io.ente.auth
 io.ente.photos.fdroid
 io.github.alketii.mightyknight
 io.github.aoc_normal
+io.github.benderblog.traintime_pda
 io.github.benoitduffez.cupsprint
 io.github.chiver
 io.github.chronosx88.yggdrasil
@@ -2654,6 +2666,7 @@ io.github.muntashirakon.unapkm
 io.github.mwageringel.everest
 io.github.otakuchiyan.dnsman
 io.github.otobikb.inputmethod.latin
+io.github.pastthepixels.freepaint
 io.github.pd4d10.gittouch
 io.github.phora.aeondroid
 io.github.powerinside.scrollsocket
@@ -2917,6 +2930,7 @@ me.zhanghai.android.textselectionwebsearch
 menion.android.whereyougo
 mf.asciitext.lite
 miccah.mpvremote
+miru.miaomint
 mixedbit.speechtrainer
 mkg20001.net.samremote
 ml.docilealligator.infinityforreddit
@@ -2928,6 +2942,7 @@ mobi.maptrek
 mobi.meddle.wehe
 mobi.omegacentauri.PerApp
 mobi.omegacentauri.SendReduced
+moe.cb4a
 moe.dic1911.autodnd
 moe.dic1911.urlsanitizer
 moe.lz233.unvcode
@@ -2987,6 +3002,7 @@ net.daverix.urlforward
 net.dcnnt
 net.ddns.mlsoftlaberge.trycorder
 net.debian.debiandroid
+net.e1547
 net.ebt.muzei.miyazaki
 net.eneiluj.moneybuster
 net.eneiluj.nextcloud.phonetrack
@@ -3067,6 +3083,7 @@ net.programmierecke.radiodroid2
 net.redsolver.noteless
 net.redwarp.gifwallpaper
 net.reichholf.dreamdroid
+net.retiolus.cigalo
 net.rocboronat.android.wallpaper.npe
 net.rocrail.androc
 net.schueller.instarepost
@@ -3089,6 +3106,8 @@ net.sourceforge.solitaire_cg
 net.sourceforge.subsonic.androidapp
 net.sourceforge.wifiremoteplay
 net.sourceforge.x11basic
+net.stargw.applist
+net.stargw.contacts
 net.stargw.contactsimport
 net.stargw.fat
 net.stargw.fok
@@ -3108,6 +3127,7 @@ net.tevp.postcode
 net.thauvin.erik.android.noussd
 net.tjado.passwdsafe
 net.tjado.usbgadget
+net.toload.main.hd
 net.turtton.ytalarm
 net.typeblog.shelter
 net.usikkert.kouchat.android
@@ -3262,6 +3282,7 @@ org.broeuschmeul.android.gps.bluetooth.provider
 org.broeuschmeul.android.gps.usb.provider
 org.btcmap
 org.c_base.c_beam
+org.ca.squawker
 org.calantas.mygeo
 org.calyxinstitute.vpn
 org.catrobat.paintroid
@@ -3353,6 +3374,7 @@ org.exarhteam.iitc_mobile
 org.fastergps
 org.fcitx.fcitx5.android
 org.fcitx.fcitx5.android.plugin.anthy
+org.fcitx.fcitx5.android.plugin.clipboard_filter
 org.fdroid.basic
 org.fdroid.fdroid
 org.fdroid.fdroid.privileged
@@ -3505,6 +3527,7 @@ org.linaro.glmark2
 org.linphone
 org.localsend.localsend_app
 org.logicallycreative.movingpolygons
+org.lufebe16.lbalance
 org.lufebe16.pysolfc
 org.lumicall.android
 org.macno.puma
@@ -3621,6 +3644,7 @@ org.ppsspp.ppsspp
 org.primftpd
 org.principate.matthew.dealing_sheet
 org.privacyhelper
+org.privacymatters.safespace
 org.projectmaxs.main
 org.projectmaxs.module.alarmset
 org.projectmaxs.module.bluetooth
@@ -3727,6 +3751,8 @@ org.shortcuts
 org.sickstache
 org.simlar
 org.sipdroid.sipua
+org.sirekanyan.knigopis
+org.sirekanyan.outline
 org.smblott.intentradio
 org.smc.inputmethod.indic
 org.smssecure.smssecure
@@ -3807,7 +3833,6 @@ org.videolan.vlc
 org.voidptr.swpieview
 org.voidsink.anewjkuapp
 org.vono.narau
-org.vudroid
 org.wahtod.wififixer
 org.walleth
 org.weilbach.splitbills
