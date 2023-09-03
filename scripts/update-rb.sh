@@ -7,6 +7,8 @@ export LC_ALL=C.UTF-8
 process_with_python() {
   python3 -c '
 import sys
+with open("archived") as fh:
+    archived = set(l.strip() for l in fh.readlines())
 with open("disabled") as fh:
     disabled = set(l.strip() for l in fh.readlines())
 with open("missing") as fh:
@@ -18,6 +20,8 @@ with open("signflinger") as fh:
 for line in sys.stdin:
     appid = line.strip()
     info = []
+    if appid in archived:
+        info.append("archived")
     if appid in disabled:
         info.append("disabled")
     if appid in missing:

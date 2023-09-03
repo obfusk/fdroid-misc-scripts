@@ -15,7 +15,7 @@ import numpy as np
 def read_rb_data(dates: List[str], what: str) -> Any:
     data = []
     for d in dates:
-        repro = disabled = missing = 0
+        repro = archived_disabled = missing = 0
         with open(f"reproducible/{d}-{what}") as fh:
             for line in fh:
                 line = line.rstrip()
@@ -23,13 +23,13 @@ def read_rb_data(dates: List[str], what: str) -> Any:
                     tags = line.split(" ", 1)[-1][1:-1].split(", ")
                 else:
                     tags = []
-                if "disabled" in tags:
-                    disabled += 1
+                if "archived" in tags or "disabled" in tags:
+                    archived_disabled += 1
                 elif "missing" in tags:
                     missing += 1
                 elif "no longer RB" not in tags:
                     repro += 1
-        data.append([repro, disabled, missing])
+        data.append([repro, archived_disabled, missing])
     return np.transpose(data)
 
 
@@ -145,7 +145,7 @@ def read_veri_idx_t_data(dates: List[str]) -> Any:
 
 
 def _rb_filter_apps(fh: TextIO) -> Set[str]:
-    skip = ("disabled", "missing", "no longer RB")
+    skip = ("archived", "disabled", "missing", "no longer RB")
     apps = set()
     for line in fh:
         line = line.rstrip()
@@ -166,7 +166,7 @@ def _abs_to_pct(values: List[int]) -> List[int]:
 
 
 def plot_rb_data(what: str, title: str, x: List[str], data: Any) -> None:
-    labels = ["reproducible", "disabled", "missing"]
+    labels = ["reproducible", "archived/disabled", "missing"]
     colors = ["green", "red", "orange"]
     plot_data(what, title, x, data, colors=colors, labels=labels)
 
