@@ -3,13 +3,15 @@
 Publishing apps with Reproducible Builds: https://f-droid.org/docs/Reproducible_Builds/  
 Verification builds: https://f-droid.org/docs/Verification_Server/  
 Scripts and data: https://github.com/obfusk/fdroid-misc-scripts  
-Last updated: 2023-09-03
+Last updated: 2023-09-25
 
 ![rb](../graphs/rb.png)
 
 Description: graph "Apps published with Reproducible Builds (all)",
 showing an almost straight line from 20 apps on 2022-11-01 to 191 apps
 on 2023-09-01.
+
+[All F-Droid apps published with Reproducible Builds (2023-09-01)](2023-09-01-all.md)
 
 ### Signatures in metadata: publishing both (upstream) developer-signed and F-Droid-signed APKs
 
