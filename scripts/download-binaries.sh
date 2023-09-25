@@ -4,6 +4,7 @@
 set -e
 export LC_ALL=C.UTF-8
 mkdir -p binaries
+# shellcheck disable=SC2013
 for yml in $( grep -lE '^Binaries|^    binary: http' \
                 fdroiddata/metadata/*.yml | sort ); do
   echo "==> $yml"
@@ -23,7 +24,7 @@ for b in reversed(m["Builds"]):
 else:
     print()
 ' "$yml" )
-  if [ -z "$version" -o -z "$code" ]; then
+  if [ -z "$version" ] || [ -z "$code" ]; then
     echo 'all versions disabled'
   else
     echo "version=$version code=$code"

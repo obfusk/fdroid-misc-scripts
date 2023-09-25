@@ -53,6 +53,7 @@ echo 'listing Binaries...'
 binaries="$( grep -lE '^Binaries|^    binary: http' metadata/*.yml \
                | sort | sed -r 's!^metadata/!!; s!\.yml$!!' )"
 echo 'listing signatures...'
+# shellcheck disable=SC2012
 signatures="$( ls -d metadata/*/signatures | sort \
                  | sed -r 's!^metadata/!!; s!/signatures$!!')"
 if [ -n "$1" ]; then

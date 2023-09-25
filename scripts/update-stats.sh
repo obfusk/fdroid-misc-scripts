@@ -17,6 +17,7 @@ else
 fi
 echo "date=$date"
 echo 'listing apps...'
+# shellcheck disable=SC2207,SC2035
 apps=( $( cd metadata && grep -LE '^ArchivePolicy: 0|^Disabled:' *.yml \
             | sed 's!\.yml$!!' | sort ) )
 if [ -n "$1" ]; then

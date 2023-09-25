@@ -9,10 +9,11 @@ else
   apks=( "$@" )
 fi
 for apk in "${apks[@]}"; do
+  # shellcheck disable=SC2207
   blocks=( $( apksigtool parse --json "$apk" 2>/dev/null \
                 | jq -r '.pairs[].value._type' \
                 | grep -Ev '^(APKSignatureSchemeBlock|VerityPaddingBlock)$' || true ) )
   if [ "${#blocks[@]}" != 0 ]; then
-    echo "$apk: ${blocks[@]}"
+    echo "$apk:" "${blocks[@]}"
   fi
 done

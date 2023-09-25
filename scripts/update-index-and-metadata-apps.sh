@@ -9,10 +9,12 @@ jq -r '.apps[].packageName' < index-v1.json | sort > apps/index-apps
 echo 'listing apps from metadata...'
 (
   cd fdroiddata/metadata
+  # shellcheck disable=SC2035
   ls *.yml
 ) | sed 's!\.yml$!!' | sort > apps/metadata-apps
 (
   cd fdroiddata/metadata
+  # shellcheck disable=SC2035
   grep -lE '^ArchivePolicy: 0|^Disabled:' *.yml
 ) | sed 's!\.yml$!!' | sort > apps/metadata-apps-archived-and-disabled
 echo 'diffing...'

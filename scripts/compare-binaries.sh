@@ -8,9 +8,10 @@ if [ $# = 0 ]; then
 else
   compare=( "$@" )
 fi
+# shellcheck disable=SC2012
 for apk in $( ls | sed -r 's/_(fdroid|upstream)\.apk$//' | sort | uniq ); do
   printf '%-71s ' "$apk"
-  if [ -e "${apk}_upstream.apk" -a -e "${apk}_fdroid.apk" ]; then
+  if [ -e "${apk}_upstream.apk" ] && [ -e "${apk}_fdroid.apk" ]; then
     if "${compare[@]}" "${apk}_upstream.apk" "${apk}_fdroid.apk"; then
       echo OK
     else
