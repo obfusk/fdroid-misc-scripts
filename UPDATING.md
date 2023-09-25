@@ -28,6 +28,7 @@ $ ./scripts/update-rb.sh $FIRSTOFTHISMONTH
 $ ./scripts/update-stats.sh $FIRSTOFTHISMONTH
 $ ./scripts/update-diffs.sh
 $ ./scripts/create-graphs.py
+$ ./scripts/all-rb.sh
 ```
 
 NB: scripts must be run in this order, after updating `binaries/`.

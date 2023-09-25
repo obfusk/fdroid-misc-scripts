@@ -103,6 +103,15 @@ Update `stats/YYYY-MM-DD-{adds,rems}` &
 $ ./scripts/update-diffs.sh
 ```
 
+#### all-rb.sh
+
+Create `reproducible/YYYY-MM-DD-all.rb` from
+`reproducible/YYYY-MM-DD-{bins,sigs}`.
+
+```sh
+$ ./scripts/all-rb.sh 2023-09-01
+```
+
 ### Index & metadata (v2)
 
 #### download-v2.sh
