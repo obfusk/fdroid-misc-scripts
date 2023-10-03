@@ -23,6 +23,7 @@ anupam.acrylic
 app.alextran.immich
 app.crescentcash.src
 app.crossword.yourealwaysbe.forkyz
+app.crossword.yourealwaysbe.forkyzscanner
 app.fedilab.fedilabtube
 app.fedilab.mobilizon
 app.fedilab.nitterizeme
@@ -40,6 +41,7 @@ app.olauncher
 app.olaunchercf
 app.openconnect
 app.organicmaps
+app.pachli
 app.reading.stoic.stoicreading
 app.reading.stoic.stoicreading2
 app.seeneva.reader
@@ -322,6 +324,7 @@ com.amaze.filemanager
 com.amaze.fileutilities
 com.ames.books
 com.ammar.wallflow
+com.ammar.wallflow.plus
 com.amnesica.clearclipboard
 com.amnesica.kryptey
 com.amphoras.tpthelper
@@ -542,6 +545,7 @@ com.cgogolin.library
 com.chanapps.four.activity
 com.chancehorizon.just24hoursplus
 com.chao.app
+com.chemistry.admin.chemistrylab
 com.chen.deskclock
 com.cheogram.android
 com.chesire.nekome
@@ -1277,6 +1281,7 @@ com.lucao.limpazap
 com.lucasdnd.bitclock16
 com.lucasdnd.decimaltimeclockwidget
 com.lucasdnd.unixtimeclockwidget
+com.lucinhu.bili_you
 com.luk.saucenao
 com.luk.timetable2
 com.lukekorth.screennotifications
@@ -1402,6 +1407,7 @@ com.mrbimc.selinux
 com.mridang.speedo
 com.mridang.throttle
 com.mrmannwood.hexlauncher
+com.mrsep.ttlchanger
 com.msapps.touchdetector
 com.mschlauch.comfortreader
 com.murrayc.galaxyzoo.app
@@ -1533,6 +1539,7 @@ com.paranoid.ParanoidWallpapers
 com.parishod.watomatic
 com.passcard
 com.pato05.uploadgram
+com.paultirk.yatoo
 com.pavelsikun.runinbackgroundpermissionsetter
 com.pavelsof.wormhole
 com.pcinpact
@@ -2052,6 +2059,7 @@ com.yubico.yubioath
 com.yubico.yubitotp
 com.zachrattner.pockettalk
 com.zagayevskiy.pacman
+com.zaneschepke.wireguardautotunnel
 com.zapta.apps.maniana
 com.zaren
 com.zeapo.pwdstore
@@ -2452,6 +2460,7 @@ de.westnordost.streetcomplete.expert
 de.wger.flutter
 de.wikilab.android.friendica01
 de.wikilab.android.ldapsync
+de.wivewa.android
 de.wivewa.dialer
 de.wuapps.moredays
 de.yaacc
@@ -2461,11 +2470,13 @@ deckers.thibault.aves.libre
 deep.ryd.rydplayer
 deltazero.amarok.foss
 design.codeux.authpass.fdroid
+dev.anilbeesetti.nextplayer
 dev.atahabaki.wordbook
 dev.atajan.lingva_android
 dev.bartuzen.qbitcontroller
 dev.corruptedark.diditakemymeds
 dev.corruptedark.openchaoschess
+dev.cyberme0w.openbike
 dev.danjackson.noisecancel
 dev.danjackson.speaker
 dev.datlag.burningseries
@@ -2882,11 +2893,13 @@ io.github.hidroh.materialistic
 io.github.hopedia
 io.github.installalogs
 io.github.ismywebsiteup
+io.github.jd1378.otphelper
 io.github.kobuge.games.minilens
 io.github.lonamiwebs.klooni
 io.github.lonamiwebs.stringlate
 io.github.lufte.lona
 io.github.martinschneider.juvavum
+io.github.mkckr0.audio_share_app
 io.github.mthli.Ninja
 io.github.muntashirakon.AppManager
 io.github.muntashirakon.Music
@@ -4016,6 +4029,7 @@ org.recentwidget
 org.redcross.openmapkit
 org.retroarch
 org.retroshare.android.qml_app
+org.revengate.revengate
 org.rmll
 org.runnerup.free
 org.safecoin.safeprice
@@ -4090,6 +4104,7 @@ org.simlar
 org.sipdroid.sipua
 org.sirekanyan.knigopis
 org.sirekanyan.outline
+org.sirekanyan.warmongr
 org.sixgun.ponyexpress
 org.smblott.intentradio
 org.smc.inputmethod.indic
@@ -4200,6 +4215,7 @@ org.woheller69.TimeLapseCam
 org.woheller69.arity
 org.woheller69.audio_analyzer_for_android
 org.woheller69.audiometry
+org.woheller69.dumpseeker
 org.woheller69.eggtimer
 org.woheller69.gpscockpit
 org.woheller69.gptassist
@@ -4298,6 +4314,7 @@ pt.ipleiria.mymusicqoe
 pt.isec.tp.am
 pt.joaomneto.titancompanion
 pw.thedrhax.mosmetro
+quest.faraday.tip_calculator
 quickly.quit
 raele.concurseiro
 raffarti.simpleadvancedmetronome
@@ -4376,6 +4393,7 @@ science.iodev.fissh
 science.itaintrocket.pomfshare
 screen.dimmer.pixelfilter
 se.anyro.nfc_reader
+se.arctosoft.vault
 se.bitcraze.crazyfliecontrol2
 se.danielj.geometridestroyer
 se.embargo.retroboy
