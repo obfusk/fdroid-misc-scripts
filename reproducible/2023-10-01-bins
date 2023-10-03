@@ -5,8 +5,8 @@ app.mlauncher
 biz.binarysolutions.weatherusa [signflinger]
 bored.codebyk.mint_task [signflinger]
 bored.codebyk.mintcalc [signflinger]
-ch.admin.bag.covidcertificate.verifier
-ch.admin.bag.covidcertificate.wallet
+ch.admin.bag.covidcertificate.verifier [archived]
+ch.admin.bag.covidcertificate.wallet [archived]
 cloud.pablos.overload
 com.agateau.burgerparty [signflinger]
 com.akansh.fileserversuit
