@@ -168,14 +168,14 @@ def _abs_to_pct(values: List[int]) -> List[int]:
 def plot_rb_data(what: str, title: str, x: List[str], data: Any) -> None:
     labels = ["reproducible", "archived/disabled", "missing"]
     colors = ["green", "red", "orange"]
-    plot_data(what, title, x, data, colors=colors, labels=labels)
+    plot_data(what, title, shorten_dates(x), data, colors=colors, labels=labels)
 
 
 def plot_apps_data(what: str, title: str, x: List[str], data: Any, *,
                    ylabel: Optional[str] = None) -> None:
     labels = ["reproducible", "other"]
     colors = ["green", "blue"]
-    plot_data(what, title, x, data, colors=colors, labels=labels, ylabel=ylabel)
+    plot_data(what, title, shorten_dates(x), data, colors=colors, labels=labels, ylabel=ylabel)
 
 
 def plot_veri_data(what: str, title: str, x: List[str], data: Any, *,
@@ -193,7 +193,7 @@ def plot_veri_t_data(what: str, title: str, x: List[str], data: Any, *,
                      ylabel: Optional[str] = None) -> None:
     labels = ["verified at the time", "verified later", "unverified", "untested"]
     colors = ["green", "lime", "red", "orange"]
-    plot_data(what, title, x, data, colors=colors, labels=labels, ylabel=ylabel)
+    plot_data(what, title, shorten_dates(x), data, colors=colors, labels=labels, ylabel=ylabel)
 
 
 def plot_data(what: str, title: str, x: List[str], data: Any, *,
@@ -212,6 +212,16 @@ def plot_data(what: str, title: str, x: List[str], data: Any, *,
         ax.set_xticks(xticks)
     print(f"saving graphs/{what}.png...")
     plt.savefig(f"graphs/{what}.png")
+
+
+def shorten_dates(dates: List[str]) -> List[str]:
+    out = []
+    for i in range(len(dates)):
+        d = dates[i]
+        if 0 < i < len(dates) - 1 and d.startswith(dates[i - 1][:5]):
+            d = d[5:]
+        out.append(d)
+    return out
 
 
 def create_graphs() -> None:
