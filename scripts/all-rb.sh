@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: 2023 FC Stegerman <flx@obfusk.net>
+# SPDX-License-Identifier: AGPL-3.0-or-later
 firstofthismonth="$( date +%Y-%m-01 )"
 date="${1:-$firstofthismonth}"
 {
