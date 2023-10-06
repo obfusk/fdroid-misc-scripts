@@ -25,10 +25,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        sudo apt-get update
-        sudo apt-get install -y shellcheck
         python3 -m pip install --upgrade pip
-        python3 -m pip install flake8 pylint mypy
-        mypy --install-types scripts/*.py
+        python3 -m pip install matplotlib
+        python3 -m pip install flake8 pylint mypy types-PyYAML
     - name: Test
       run: make test
