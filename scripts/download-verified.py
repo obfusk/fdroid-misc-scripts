@@ -38,7 +38,7 @@ def main() -> None:
                 apps[appid] = False
     data = {}
     for i, (appid, from_json) in enumerate(sorted(apps.items())):
-        print(f"[{i+1}/{len(apps)}]")
+        print(f"[{i + 1}/{len(apps)}]")
         # if i and i % 100 == 0:
         #     save()
         verified_apks = set()

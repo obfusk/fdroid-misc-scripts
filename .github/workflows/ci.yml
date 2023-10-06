@@ -26,7 +26,7 @@ jobs:
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
-        python3 -m pip install matplotlib
+        python3 -m pip install numpy
         python3 -m pip install flake8 pylint mypy types-PyYAML
     - name: Test
       run: make test
