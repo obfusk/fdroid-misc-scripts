@@ -29,5 +29,6 @@ jobs:
         sudo apt-get install -y shellcheck
         python3 -m pip install --upgrade pip
         python3 -m pip install flake8 pylint mypy
+        mypy --install-types
     - name: Test
       run: make test
